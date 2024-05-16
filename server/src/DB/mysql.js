@@ -1,9 +1,10 @@
 const mysqlx = require('@mysql/xdevapi');
 const config = require('../config');
+const e = require('express');
 
 const dbconfig = {
     host: config.mysql.host,
-    port: 33060,
+    port: config.mysql.port,
     user: config.mysql.user,
     password: config.mysql.password,
     schema: config.mysql.database
@@ -44,7 +45,6 @@ async function uno(tabla, primaryKey, id) {
     }
     try {
         const table = session.getSchema(dbconfig.schema).getTable(tabla);
-        // Utiliza el nombre de la clave primaria directamente en la consulta
         const result = await table.select().where(`${primaryKey} = :id`).bind('id', id).execute();
         return result.fetchOne();
     } catch (err) {
@@ -52,19 +52,56 @@ async function uno(tabla, primaryKey, id) {
     }
 }
 
-
-function agregar(tabla, data) {
-
+async function agregar(tabla, data) {
+    if (!session) {
+        await conMysql();
+    }
+    try {
+        const table = session.getSchema(dbconfig.schema).getTable(tabla);
+        const result = await table.insert(data).execute();
+        return result.getAutoIncrementValue();
+    } catch (err) {
+        throw err;
+    }
 }
 
-function eliminar(tabla, id) {
-
+async function actualizar(tabla, primaryKey, data) {
+    if (!session) {
+        await conMysql();
+    }
+    try {
+        const table = session.getSchema(dbconfig.schema).getTable(tabla);
+        const updateQuery = table.update();
+        Object.keys(data).forEach(key => {
+            if (key !== 'id') {
+                updateQuery.set(key, data[key]);
+            }
+        });
+        const result = await updateQuery.where(`${primaryKey} = :id`).bind('id', data.id).execute();
+        return { affectedItems: result.getAffectedItemsCount() };
+    } catch (err) {
+        throw err;
+    }
 }
 
+
+async function eliminar(tabla, primaryKey, data) {
+    if (!session) {
+        await conMysql();
+    }
+    try {
+        const table = session.getSchema(dbconfig.schema).getTable(tabla);
+        const result = await table.delete().where(`${primaryKey} = :id`).bind('id', data.id).execute();
+        return { affectedItems: result.getAffectedItemsCount() };
+    } catch (err) {
+        throw err;
+    }
+}
 
 module.exports = {
     todos,
     uno,
     agregar,
+    actualizar,
     eliminar,
 }
