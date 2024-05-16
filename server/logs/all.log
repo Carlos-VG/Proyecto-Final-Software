@@ -54,3 +54,53 @@
 2024-05-16 00:47:16:4716 [31merror[39m: [31mError al autenticar usuario[39m
 2024-05-16 00:51:17:5117 [32minfo[39m: [32mConexión a la base de datos establecida[39m
 2024-05-16 00:51:17:5117 [31merror[39m: [31mError al autenticar usuario[39m
+2024-05-16 01:03:49:349 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-16 01:05:49:549 [31merror[39m: [31mError al autenticar usuario[39m
+2024-05-16 01:15:58:1558 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-16 01:15:58:1558 [31merror[39m: [31mError al autenticar usuario[39m
+2024-05-16 01:16:51:1651 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-16 01:16:51:1651 [31merror[39m: [31mError al autenticar usuario[39m
+2024-05-16 01:18:20:1820 [31merror[39m: [31mError al autenticar usuario[39m
+2024-05-16 01:19:28:1928 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-16 01:19:28:1928 [31merror[39m: [31mError al autenticar usuario[39m
+2024-05-16 01:19:38:1938 [31merror[39m: [31mError al autenticar usuario[39m
+2024-05-16 01:20:52:2052 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-16 01:20:52:2052 [31merror[39m: [31mError al autenticar usuario[39m
+2024-05-16 01:25:07:257 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-16 01:25:07:257 [31merror[39m: [31mError al autenticar usuario[39m
+2024-05-16 01:25:34:2534 [31merror[39m: [31mError al autenticar usuario[39m
+2024-05-16 01:27:21:2721 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-16 01:27:21:2721 [31merror[39m: [31mError al autenticar usuario[39m
+2024-05-16 01:29:22:2922 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-16 01:29:22:2922 [31merror[39m: [31mError al autenticar usuario[39m
+2024-05-16 01:34:51:3451 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-16 01:34:51:3451 [31merror[39m: [31mError al autenticar usuario[39m
+2024-05-16 01:34:56:3456 [31merror[39m: [31mError al autenticar usuario[39m
+2024-05-16 01:39:33:3933 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-16 01:39:33:3933 [31merror[39m: [31mError al autenticar usuario[39m
+2024-05-16 01:41:57:4157 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-16 01:41:57:4157 [35mhttp[39m: [35mUsuario autenticado[39m
+2024-05-16 01:42:36:4236 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-16 01:42:36:4236 [31merror[39m: [31mError al autenticar usuario[39m
+2024-05-16 01:44:13:4413 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-16 01:44:13:4413 [35mhttp[39m: [35mUsuario autenticado[39m
+2024-05-16 01:51:23:5123 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-16 01:51:23:5123 [31merror[39m: [31mCredenciales incorrectas[39m
+2024-05-16 01:51:23:5123 [35mhttp[39m: [35mUsuario autenticado[39m
+2024-05-16 01:52:55:5255 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-16 01:52:55:5255 [31merror[39m: [31mUsuario o contraseña incorrectos[39m
+2024-05-16 01:52:55:5255 [35mhttp[39m: [35mUsuario autenticado[39m
+2024-05-16 01:53:04:534 [31merror[39m: [31mUsuario o contraseña incorrectos[39m
+2024-05-16 01:53:04:534 [35mhttp[39m: [35mUsuario autenticado[39m
+2024-05-16 01:53:54:5354 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-16 01:53:54:5354 [31merror[39m: [31mUsuario o contraseña incorrectos[39m
+2024-05-16 01:53:54:5354 [35mhttp[39m: [35mUsuario autenticado[39m
+2024-05-16 01:56:02:562 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-16 01:56:02:562 [31merror[39m: [31mUsuario o contraseña incorrectos[39m
+2024-05-16 01:56:02:562 [35mhttp[39m: [35mUsuario autenticado[39m
+2024-05-16 02:02:13:213 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-16 02:02:13:213 [31merror[39m: [31mError al autenticar usuario[39m
+2024-05-16 02:03:24:324 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-16 02:03:24:324 [31merror[39m: [31mError al autenticar usuario[39m
+2024-05-16 02:05:27:527 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-16 02:05:27:527 [32minfo[39m: [32mUsuario autenticado correctamente[39m

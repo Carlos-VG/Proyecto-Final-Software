@@ -1,6 +1,7 @@
 const TABLE_NAME = 'tblusuario';
 const bcrypt = require('bcrypt');
 const auth = require('../../../auth');
+const logger = require('../../logger');
 
 module.exports = function (injectedController) {
     let controller = injectedController;
@@ -10,17 +11,33 @@ module.exports = function (injectedController) {
     }
 
     async function login(usuario, password) {
-        const data = await controller.getByUser(TABLE_NAME, 'usu_login', usuario);
+        try {
+            const query = `SELECT * FROM ${TABLE_NAME} WHERE usu_login = '${usuario}'`;
+            const data = await controller.executeQuery(query);
 
-        return bcrypt.compare(password, data.usu_pwd)
-            .then((res) => {
-                if (res === true) {
-                    return auth.asignarToken({ ...data });
-                } else {
-                    throw new Error('Credenciales incorrectas');
-                }
-            });
+            return bcrypt.compare(password, data[2])
+                .then((res) => {
+                    if (res === true) {
+                        const payload = {
+                            id: data[0],
+                            username: data[1],
+                            role: data[3]
+                        };
+                        if (data[3] === 'docente') {
+                            payload.docente_id = data[4];
+                        }
+                        return auth.asignarToken(payload);
+                    } else {
+                        throw new Error('Credenciales incorrectas');
+                    }
+                });
+
+        } catch (err) {
+            console.error("error al asignar token", err);
+            throw err;
+        }
     }
+
 
     async function insert(data) {
         const authData = {

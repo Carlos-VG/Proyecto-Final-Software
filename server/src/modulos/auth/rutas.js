@@ -15,11 +15,11 @@ async function login(req, res, next) {
     try {
         const token = await controlador.login(req.body.usuario, req.body.password);
         respuesta.success(req, res, token, 200);
-        logger.http('Usuario autenticado');
+        logger.info("Usuario autenticado correctamente")
     } catch (error) {
         next(error);
         logger.error('Error al autenticar usuario');
     }
-};
+}
 
 module.exports = router;

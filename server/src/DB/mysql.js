@@ -48,11 +48,14 @@ async function remove(table, primaryKey, id) {
     return { affectedItems: result.getAffectedItemsCount() };
 }
 
-async function getByUser(tabla, columna, usuario) {
-    const db = await dbConnection.getConnection();
-    const tableObj = db.getSchema(dbConfig.database).getTable(tabla);
-    const result = await tableObj.select().where(`${columna} = :usuario`).bind('usuario', usuario).execute();
-    return result.fetchOne();
+async function executeQuery(query) {
+    try {
+        const db = await dbConnection.getConnection();
+        return (await db.sql(query).execute()).fetchOne();
+    } catch (err) {
+        console.error('Error executing query:', err);
+        throw err;
+    }
 }
 
 module.exports = {
@@ -61,5 +64,5 @@ module.exports = {
     insert,
     update,
     remove,
-    getByUser,
+    executeQuery,
 };
