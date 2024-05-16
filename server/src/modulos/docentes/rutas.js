@@ -11,7 +11,7 @@ const router = express.Router();
  */
 router.get('/', getTodosLosDocentes);
 router.get('/:id', getUnDocente);
-router.post('/', agregarDocente);
+router.post('/', seguridad(), agregarDocente);
 router.put('/:id', actualizarDocente);
 router.delete('/:id', eliminarDocente);
 

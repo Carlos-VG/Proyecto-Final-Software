@@ -13,7 +13,11 @@ function verificarToken(token) {
 
 const chequearToken = {
     confirmarToken: function (req) {
-        const decoficado = decodificarCabecera(req);
+        const decodificado = decodificarCabecera(req, rol);
+
+        if (decodificado.rol === rol) {
+            throw new Error('No tienes permisos para realizar esta acción');
+        }
     }
 };
 
