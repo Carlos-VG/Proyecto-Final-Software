@@ -104,3 +104,10 @@
 2024-05-16 02:03:24:324 [31merror[39m: [31mError al autenticar usuario[39m
 2024-05-16 02:05:27:527 [32minfo[39m: [32mConexión a la base de datos establecida[39m
 2024-05-16 02:05:27:527 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-16 03:37:31:3731 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-16 03:37:31:3731 [31merror[39m: [31mError al crear usuario[39m
+2024-05-16 03:38:25:3825 [32minfo[39m: [32mUsuario creado correctamente[39m
+2024-05-16 03:39:13:3913 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-16 03:40:32:4032 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-16 03:42:28:4228 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-16 03:43:27:4327 [32minfo[39m: [32mUsuario autenticado correctamente[39m

@@ -21,7 +21,7 @@ module.exports = function (injectedController) {
                         const payload = {
                             id: data[0],
                             username: data[1],
-                            rol: data[3]
+                            role: data[3]
                         };
                         if (data[3] === 'docente') {
                             payload.docente_id = data[4];

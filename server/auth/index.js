@@ -13,9 +13,9 @@ function verificarToken(token) {
 
 const chequearToken = {
     confirmarToken: function (req) {
-        const decodificado = decodificarCabecera(req, rol);
+        const decodificado = decodificarCabecera(req);
 
-        if (decodificado.rol === rol) {
+        if (decodificado.role !== 'coordinador') {
             throw new Error('No tienes permisos para realizar esta acción');
         }
     }
