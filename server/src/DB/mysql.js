@@ -1,107 +1,57 @@
 const mysqlx = require('@mysql/xdevapi');
 const config = require('../config');
-const e = require('express');
 
-const dbconfig = {
-    host: config.mysql.host,
-    port: config.mysql.port,
-    user: config.mysql.user,
-    password: config.mysql.password,
-    schema: config.mysql.database
+const dbConfig = config.mysql;
+
+// Módulo de conexión a la base de datos
+const dbConnection = require('./db-connection');
+
+// Operaciones CRUD
+async function getAll(table) {
+    const db = await dbConnection.getConnection();
+    const tableObj = db.getSchema(dbConfig.database).getTable(table);
+    const result = await tableObj.select().execute();
+    return result.fetchAll();
 }
 
-
-let session;
-
-async function conMysql() {
-    try {
-        session = await mysqlx.getSession(dbconfig);
-        console.log('DB conectada');
-    } catch (err) {
-        console.log('[db err]', err);
-        setTimeout(conMysql, 2000);
-    }
+async function getOne(table, primaryKey, id) {
+    const db = await dbConnection.getConnection();
+    const tableObj = db.getSchema(dbConfig.database).getTable(table);
+    const result = await tableObj.select().where(`${primaryKey} = :id`).bind('id', id).execute();
+    return result.fetchOne();
 }
 
-conMysql();
-
-
-async function todos(tabla) {
-    if (!session) {
-        await conMysql();
-    }
-    try {
-        const table = session.getSchema(dbconfig.schema).getTable(tabla);
-        const result = await table.select().execute();
-        return result.fetchAll();
-    } catch (err) {
-        throw err;
-    }
+async function insert(table, data) {
+    const db = await dbConnection.getConnection();
+    const tableObj = db.getSchema(dbConfig.database).getTable(table);
+    const result = await tableObj.insert(data).execute();
+    return result.getAutoIncrementValue();
 }
 
-async function uno(tabla, primaryKey, id) {
-    if (!session) {
-        await conMysql();
-    }
-    try {
-        const table = session.getSchema(dbconfig.schema).getTable(tabla);
-        const result = await table.select().where(`${primaryKey} = :id`).bind('id', id).execute();
-        return result.fetchOne();
-    } catch (err) {
-        throw err;
-    }
+async function update(table, primaryKey, data, id) {
+    const db = await dbConnection.getConnection();
+    const tableObj = db.getSchema(dbConfig.database).getTable(table);
+    const updateQuery = tableObj.update();
+    Object.keys(data).forEach(key => {
+        if (key !== primaryKey) {
+            updateQuery.set(key, data[key]);
+        }
+    });
+    const result = await updateQuery.where(`${primaryKey} = :id`).bind('id', id).execute();
+    return { affectedItems: result.getAffectedItemsCount() };
 }
 
-async function agregar(tabla, data) {
-    if (!session) {
-        await conMysql();
-    }
-    try {
-        const table = session.getSchema(dbconfig.schema).getTable(tabla);
-        const result = await table.insert(data).execute();
-        return result.getAutoIncrementValue();
-    } catch (err) {
-        throw err;
-    }
-}
-
-async function actualizar(tabla, primaryKey, data) {
-    if (!session) {
-        await conMysql();
-    }
-    try {
-        const table = session.getSchema(dbconfig.schema).getTable(tabla);
-        const updateQuery = table.update();
-        Object.keys(data).forEach(key => {
-            if (key !== 'id') {
-                updateQuery.set(key, data[key]);
-            }
-        });
-        const result = await updateQuery.where(`${primaryKey} = :id`).bind('id', data.id).execute();
-        return { affectedItems: result.getAffectedItemsCount() };
-    } catch (err) {
-        throw err;
-    }
-}
-
-
-async function eliminar(tabla, primaryKey, data) {
-    if (!session) {
-        await conMysql();
-    }
-    try {
-        const table = session.getSchema(dbconfig.schema).getTable(tabla);
-        const result = await table.delete().where(`${primaryKey} = :id`).bind('id', data.id).execute();
-        return { affectedItems: result.getAffectedItemsCount() };
-    } catch (err) {
-        throw err;
-    }
+async function remove(table, primaryKey, id) {
+    const db = await dbConnection.getConnection();
+    const tableObj = db.getSchema(dbConfig.database).getTable(table);
+    const result = await tableObj.delete().where(`${primaryKey} = :id`).bind('id', id).execute();
+    return { affectedItems: result.getAffectedItemsCount() };
 }
 
 module.exports = {
-    todos,
-    uno,
-    agregar,
-    actualizar,
-    eliminar,
-}
+    getAll,
+    getOne,
+    insert,
+    update,
+    remove,
+};

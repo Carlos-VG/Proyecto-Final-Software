@@ -1,44 +1,45 @@
-const TABLA = 'tblDocente';
+const TABLE_NAME = 'tblDocente';
 
-module.exports = function (dbInyectada) {
+module.exports = function (injectedController) {
+    let controller = injectedController;
 
-    let db = dbInyectada;
-
-    if (!db) {
-        db = require('../../DB/mysql');
+    if (!controller) {
+        controller = require('../../DB/mysql');
     }
 
-    function todos() {
-        return db.todos(TABLA);
+    async function getAll() {
+        return controller.getAll(TABLE_NAME, 'docente_id');
     }
 
-    function uno(id) {
-        return db.uno(TABLA, 'docente_id', id);
+    async function getOne(id) {
+        return controller.getOne(TABLE_NAME, 'docente_id', id);
     }
 
-    function agregar(body) {
-        let data = { ...body };
+    async function insert(data) {
+        const dataToInsert = { ...data };
 
-        if ('id' in data) {
-            data.docente_id = data.id;
-            delete data.id;
+        if ('id' in dataToInsert) {
+            dataToInsert.docente_id = dataToInsert.id;
+            delete dataToInsert.id;
         }
-        return db.agregar(TABLA, data);
+
+        return controller.insert(TABLE_NAME, dataToInsert);
     }
 
-    function actualizar(body) {
-        return db.actualizar(TABLA, 'docente_id', body);
+    async function update(data, id) {
+        const dataToUpdate = { ...data };
+        return controller.update(TABLE_NAME, 'docente_id', dataToUpdate, id);
     }
 
-    function eliminar(body) {
-        return db.eliminar(TABLA, 'docente_id', body);
+    async function remove(id) {
+        return controller.remove(TABLE_NAME, 'docente_id', id);
     }
 
     return {
-        todos,
-        uno,
-        agregar,
-        actualizar,
-        eliminar,
-    }
-}
+        getAll,
+        getOne,
+        insert,
+        update,
+        remove,
+    };
+};
