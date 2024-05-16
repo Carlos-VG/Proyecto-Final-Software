@@ -8,6 +8,7 @@ const morgan = require('morgan');
 const config = require('./config');
 
 const docentes = require('./modulos/docentes/rutas');
+const auth = require('./modulos/auth/rutas');
 const error = require('./red/errors');
 
 const app = express();
@@ -25,6 +26,7 @@ app.use(express.urlencoded({ extended: true }));
 app.set('port', config.app.port);
 
 app.use('/api/docentes', docentes);
+app.use('/api/auth/', auth);
 app.use(error);
 
 module.exports = app;

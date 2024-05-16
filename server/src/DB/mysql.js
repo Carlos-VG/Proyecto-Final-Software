@@ -48,10 +48,18 @@ async function remove(table, primaryKey, id) {
     return { affectedItems: result.getAffectedItemsCount() };
 }
 
+async function getByUser(tabla, columna, usuario) {
+    const db = await dbConnection.getConnection();
+    const tableObj = db.getSchema(dbConfig.database).getTable(tabla);
+    const result = await tableObj.select().where(`${columna} = :usuario`).bind('usuario', usuario).execute();
+    return result.fetchOne();
+}
+
 module.exports = {
     getAll,
     getOne,
     insert,
     update,
     remove,
+    getByUser,
 };
