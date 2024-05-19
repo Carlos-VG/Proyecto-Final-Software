@@ -6,7 +6,7 @@
   </component>
   <component name="DBNavigator.Project.DataEditorManager">
     <record-view-column-sorting-type value="BY_INDEX" />
-    <value-preview-text-wrapping value="true" />
+    <value-preview-text-wrapping value="false" />
     <value-preview-pinned value="false" />
   </component>
   <component name="DBNavigator.Project.DatabaseBrowserManager">
@@ -30,11 +30,17 @@
     <connection id="813d4eb3-f975-44e3-a2ba-34e8023bd0ca" />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="813d4eb3-f975-44e3-a2ba-34e8023bd0ca" dataset="gestion_horario.tblperiodo_academico" active-filter-id="21e2e4bf-629b-4ed7-9177-3e0e924f1162">
+      <filter id="21e2e4bf-629b-4ed7-9177-3e0e924f1162" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="periodo_id" operator="=" value="" active="false" />
+      </filter>
+    </filter-actions>
     <filter-actions connection-id="813d4eb3-f975-44e3-a2ba-34e8023bd0ca" dataset="gestion_horario.tbldocente" active-filter-id="015dba20-4dff-49a5-bfaf-4a41fb81413c">
       <filter id="015dba20-4dff-49a5-bfaf-4a41fb81413c" name="1" temporary="false" custom-name="false" type="basic" join-type="AND">
         <condition column="docente_id" operator="=" value="1" active="true" />
       </filter>
     </filter-actions>
+    <filter-actions connection-id="813d4eb3-f975-44e3-a2ba-34e8023bd0ca" dataset="gestion_horario.tblusuario" active-filter-id="EMPTY_FILTER" />
   </component>
   <component name="DBNavigator.Project.ExecutionManager">
     <retain-sticky-names value="false" />

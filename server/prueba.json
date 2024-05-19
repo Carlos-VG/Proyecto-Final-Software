@@ -1,0 +1,20 @@
+{
+  "programas": [
+    {
+      "id": 1,
+      "programa_nombre": "Turismo y Hotelería"
+    },
+    {
+      "programa_nombre": "Nuevo Programa",
+      "id": 2
+    },
+    {
+      "programa_nombre": "Nuevo Programa",
+      "id": 3
+    },
+    {
+      "programa_nombre": "Nuevo Programa",
+      "id": 4
+    }
+  ]
+}

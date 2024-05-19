@@ -12,5 +12,6 @@ router.get('/', controlador.getAll);
  * @brief Obtener un programa por id
  */
 router.get('/:id', controlador.getById);
+router.post('/', controlador.insert);
 
 module.exports = router;

@@ -215,3 +215,42 @@
 2024-05-19 14:22:47:2247 [32minfo[39m: [32mConexión a la base de datos establecida[39m
 2024-05-19 14:22:47:2247 [32minfo[39m: [32mTablas creadas correctamente[39m
 2024-05-19 14:23:02:232 [32minfo[39m: [32mProgramas con competencias obtenidos[39m
+2024-05-19 14:25:13:2513 [31merror[39m: [31mError al conectar a la base de datos: Connection attempt to the server was aborted. Timeout of 10000 ms was exceeded.[39m
+2024-05-19 14:42:55:4255 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 14:42:55:4255 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 14:44:13:4413 [35mhttp[39m: [35mSe obtuvieron todos los docentes[39m
+2024-05-19 14:44:18:4418 [32minfo[39m: [32mProgramas con competencias obtenidos[39m
+2024-05-19 15:26:34:2634 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 15:26:34:2634 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 15:26:44:2644 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 15:26:44:2644 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 15:34:00:340 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 15:34:00:340 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 15:35:22:3522 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 15:35:22:3522 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 16:12:58:1258 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 16:12:58:1258 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 16:13:29:1329 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 16:13:29:1329 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 16:13:51:1351 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 16:13:51:1351 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 16:14:42:1442 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 16:14:42:1442 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 16:14:57:1457 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 16:14:57:1457 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 16:16:33:1633 [32minfo[39m: [32mProgramas con competencias obtenidos[39m
+2024-05-19 16:17:58:1758 [32minfo[39m: [32mProgramas con competencias obtenidos[39m
+2024-05-19 16:26:16:2616 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 16:26:17:2617 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 16:26:22:2622 [32minfo[39m: [32mProgramas con competencias obtenidos[39m
+2024-05-19 16:27:19:2719 [32minfo[39m: [32mPrograma y competencias agregadas satisfactoriamente[39m
+2024-05-19 16:27:20:2720 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 16:27:20:2720 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 16:27:29:2729 [32minfo[39m: [32mPrograma con id 31 obtenido[39m
+2024-05-19 16:27:39:2739 [32minfo[39m: [32mPrograma con id 30 obtenido[39m
+2024-05-19 16:27:43:2743 [32minfo[39m: [32mPrograma con id 29 obtenido[39m
+2024-05-19 16:27:50:2750 [32minfo[39m: [32mPrograma con id 31 obtenido[39m
+2024-05-19 16:27:55:2755 [32minfo[39m: [32mProgramas con competencias obtenidos[39m
+2024-05-19 16:28:36:2836 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 16:28:36:2836 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 16:28:39:2839 [32minfo[39m: [32mPrograma con id 31 obtenido[39m

@@ -46,3 +46,4 @@
 [31m                programa_id INT AUTO_IN' at line 2[39m
 2024-05-18 22:37:54:3754 [31merror[39m: [31mError creando tablas: Referencing column 'ambiente_id' and referenced column 'ambiente_id' in foreign key constraint 'tblhorario_ibfk_3' are incompatible.[39m
 2024-05-19 12:40:02:402 [31merror[39m: [31mError al conectar a la base de datos: Unknown database 'gestion_horario'[39m
+2024-05-19 14:25:13:2513 [31merror[39m: [31mError al conectar a la base de datos: Connection attempt to the server was aborted. Timeout of 10000 ms was exceeded.[39m
