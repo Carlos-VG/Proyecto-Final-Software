@@ -8,9 +8,22 @@ const dbConnection = require('./db-connection');
 // Operaciones CRUD
 async function getAll(table) {
     const db = await dbConnection.getConnection();
-    const tableObj = db.getSchema(dbConfig.database).getTable(table);
-    const result = await tableObj.select().execute();
-    return result.fetchAll();
+    const schema = await db.getSchema(dbConfig.database);
+    const tableObj = schema.getTable(table);
+    const columnsMetadata = await db.sql(`SHOW COLUMNS FROM ${table}`).execute();
+    const columnNames = columnsMetadata.fetchAll().map(col => col[0]);
+    const result = await tableObj.select(columnNames).execute();
+
+    const rows = result.fetchAll();
+    const objects = rows.map(row => {
+        let obj = {};
+        row.forEach((value, index) => {
+            obj[columnNames[index]] = value;
+        });
+        return obj;
+    });
+
+    return objects;
 }
 
 async function getOne(table, primaryKey, id) {
