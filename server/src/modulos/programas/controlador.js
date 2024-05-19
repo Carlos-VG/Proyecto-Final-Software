@@ -1,17 +1,47 @@
 const axios = require('axios');
 const jsonServerUrl = 'http://localhost:3000';
 const logger = require('../../logger');
+const competenciasCtrl = require('../competencias/controlador');
 
 exports.getAll = async (req, res) => {
     try {
-        const response = await axios.get(`${jsonServerUrl}/programas?_embed=programasCompetencias`);
-        res.json(response.data);
-        logger.info('Programas obtenidos');
+        // Hacer llamadas API simultáneamente
+        const [programasResponse, competenciasResponse, relacionesResponse] = await Promise.all([
+            axios.get(`${jsonServerUrl}/programas`),
+            axios.get(`${jsonServerUrl}/competencias`),
+            axios.get(`${jsonServerUrl}/programasCompetencias`)
+        ]);
+
+        const programas = programasResponse.data;
+        const competencias = competenciasResponse.data;
+        const relaciones = relacionesResponse.data;
+
+        // Crear un mapa de competencias para acceso directo por ID
+        const competenciasMap = competencias.reduce((map, competencia) => {
+            map[competencia.id] = competencia;
+            return map;
+        }, {});
+
+        // Asociar competencias con programas usando el mapa
+        const programasConCompetencias = programas.map(programa => {
+            const competenciasDePrograma = relaciones
+                .filter(relacion => relacion.programa_id === programa.id)
+                .map(relacion => competenciasMap[relacion.competencia_id])
+                .filter(comp => comp);  // Elimina cualquier undefined si alguna competencia no fue encontrada
+
+            return { ...programa, competencias: competenciasDePrograma };
+        });
+
+        res.json(programasConCompetencias);
+        logger.info('Programas con competencias obtenidos');
     } catch (error) {
+        console.error('Error detallado:', error);
+        logger.error('Error al obtener programas', error);
         res.status(500).json({ message: 'Error al obtener programas' });
-        logger.error('Error al obtener programas');
     }
 };
+
+
 
 exports.getById = async (req, res) => {
     const { id } = req.params;

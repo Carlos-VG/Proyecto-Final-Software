@@ -4,7 +4,7 @@ const logger = require('../../logger');
 
 exports.getAll = async (req, res) => {
     try {
-        const response = await axios.get(`${jsonServerUrl}/competencias?`);
+        const response = await axios.get(`${jsonServerUrl}/competencias`);
         res.json(response.data);
         logger.info('Competencias obtenidas');
     } catch (error) {
