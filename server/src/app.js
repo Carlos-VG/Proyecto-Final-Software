@@ -9,6 +9,7 @@ const config = require('./config');
 
 const docentes = require('./modulos/docentes/rutas');
 const auth = require('./modulos/auth/rutas');
+const programas = require('./modulos/programas/rutas');
 const error = require('./red/errors');
 
 const app = express();
@@ -27,6 +28,7 @@ app.set('port', config.app.port);
 
 app.use('/api/docentes', docentes);
 app.use('/api/auth/', auth);
+app.use('/api/programas', programas);
 app.use(error);
 
 module.exports = app;

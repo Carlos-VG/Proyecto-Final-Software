@@ -1,4 +1,3 @@
-const mysqlx = require('@mysql/xdevapi');
 const config = require('../config');
 
 const dbConfig = config.mysql;

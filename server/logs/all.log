@@ -137,3 +137,19 @@
 2024-05-18 22:42:37:4237 [35mhttp[39m: [35mSe obtuvieron todos los docentes[39m
 2024-05-18 22:44:30:4430 [35mhttp[39m: [35mSe obtuvieron todos los docentes[39m
 2024-05-18 22:45:16:4516 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-19 12:40:02:402 [31merror[39m: [31mError al conectar a la base de datos: Unknown database 'gestion_horario'[39m
+2024-05-19 12:40:55:4055 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 12:40:55:4055 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 12:43:37:4337 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 12:43:37:4337 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 12:45:28:4528 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 12:45:28:4528 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 12:45:34:4534 [35mhttp[39m: [35mSe obtuvieron todos los docentes[39m
+2024-05-19 12:45:50:4550 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 12:45:50:4550 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 12:46:55:4655 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 12:46:55:4655 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 12:47:36:4736 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 12:47:36:4736 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 12:50:16:5016 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 12:50:16:5016 [32minfo[39m: [32mTablas creadas correctamente[39m
