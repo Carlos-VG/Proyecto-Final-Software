@@ -4,23 +4,23 @@ const logger = require('../../logger');
 
 exports.getAll = async (req, res) => {
     try {
-        const response = await axios.get(`${jsonServerUrl}/programas?_embed=competenciasProgramas`);
+        const response = await axios.get(`${jsonServerUrl}/competencias?`);
         res.json(response.data);
-        logger.info('Programas obtenidos');
+        logger.info('Competencias obtenidas');
     } catch (error) {
-        res.status(500).json({ message: 'Error al obtener programas' });
-        logger.error('Error al obtener programas');
+        res.status(500).json({ message: 'Error al obtener competencias' });
+        logger.error('Error al obtener competencias');
     }
 };
 
 exports.getById = async (req, res) => {
     const { id } = req.params;
     try {
-        const response = await axios.get(`${jsonServerUrl}/programas/${id}?_embed=competenciasProgramas`);
+        const response = await axios.get(`${jsonServerUrl}/competencias/${id}?`);
         res.json(response.data);
-        logger.info(`Programa con id ${id} obtenido`);
+        logger.info(`Competencia con id ${id} obtenida`);
     } catch (error) {
-        res.status(500).json({ message: 'Error al obtener el programa' });
-        logger.error(`Error al obtener el programa con id ${id}`);
+        res.status(500).json({ message: 'Error al obtener competencias' });
+        logger.error(`Error al obtener la competencia con id ${id}`);
     }
 };
