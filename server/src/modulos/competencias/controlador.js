@@ -4,7 +4,7 @@ const logger = require('../../logger');
 
 exports.getAll = async (req, res) => {
     try {
-        const response = await axios.get(`${jsonServerUrl}/programas?_embed=programasCompetencias`);
+        const response = await axios.get(`${jsonServerUrl}/programas?_embed=competenciasProgramas`);
         res.json(response.data);
         logger.info('Programas obtenidos');
     } catch (error) {
@@ -16,7 +16,7 @@ exports.getAll = async (req, res) => {
 exports.getById = async (req, res) => {
     const { id } = req.params;
     try {
-        const response = await axios.get(`${jsonServerUrl}/programas/${id}?_embed=programasCompetencias`);
+        const response = await axios.get(`${jsonServerUrl}/programas/${id}?_embed=competenciasProgramas`);
         res.json(response.data);
         logger.info(`Programa con id ${id} obtenido`);
     } catch (error) {
