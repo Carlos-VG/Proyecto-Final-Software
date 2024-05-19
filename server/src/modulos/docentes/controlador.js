@@ -10,7 +10,7 @@ module.exports = function (injectedController) {
     }
 
     async function getAll() {
-        return controller.getAll(TABLE_NAME, 'docente_id');
+        return controller.getAll(TABLE_NAME);
     }
 
     async function getOne(id) {

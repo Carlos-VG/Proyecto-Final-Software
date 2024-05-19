@@ -11,6 +11,7 @@ const docentes = require('./modulos/docentes/rutas');
 const auth = require('./modulos/auth/rutas');
 const programas = require('./modulos/programas/rutas');
 const competencias = require('./modulos/competencias/rutas');
+const periodosAcademicos = require('./modulos/periodosAcademicos/rutas');
 const error = require('./red/errors');
 
 const app = express();
@@ -31,6 +32,7 @@ app.use('/api/docentes', docentes);
 app.use('/api/auth/', auth);
 app.use('/api/programas', programas);
 app.use('/api/competencias', competencias);
+app.use('/api/periodosAcademicos', periodosAcademicos);
 app.use(error);
 
 module.exports = app;

@@ -21,7 +21,7 @@ router.delete('/:id', eliminarDocente);
  */
 async function getTodosLosDocentes(req, res, next) {
     try {
-        const items = await controlador.getAll('tabla_docentes', 'id_docente');
+        const items = await controlador.getAll();
         respuesta.success(req, res, items, 200);
         logger.http('Se obtuvieron todos los docentes')
     } catch (err) {

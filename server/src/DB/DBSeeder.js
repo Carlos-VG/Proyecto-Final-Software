@@ -78,15 +78,14 @@ async function createTables() {
         //     );
         // `).execute();
 
-        // await connection.sql(`
-        //     CREATE TABLE IF NOT EXISTS tblPeriodo_Programa (
-        //         periodo_id INT NOT NULL,
-        //         programa_id INT NOT NULL,
-        //         PRIMARY KEY (periodo_id, programa_id),
-        //         FOREIGN KEY (periodo_id) REFERENCES tblPeriodo_Academico(periodo_id),
-        //         FOREIGN KEY (programa_id) REFERENCES tblPrograma(programa_id)
-        //     );
-        // `).execute();
+        await connection.sql(`
+            CREATE TABLE IF NOT EXISTS tblPeriodo_Programa (
+                periodo_id INT NOT NULL,
+                programa_id INT NOT NULL,
+                PRIMARY KEY (periodo_id, programa_id),
+                FOREIGN KEY (periodo_id) REFERENCES tblPeriodo_Academico(periodo_id)
+            );
+        `).execute();
 
         await connection.sql(`
             CREATE TABLE IF NOT EXISTS tblHorario (
