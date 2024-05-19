@@ -5,7 +5,6 @@ const competenciasCtrl = require('../competencias/controlador');
 
 exports.getAll = async (req, res) => {
     try {
-        // Hacer llamadas API simultáneamente
         const [programasResponse, competenciasResponse, relacionesResponse] = await Promise.all([
             axios.get(`${jsonServerUrl}/programas`),
             axios.get(`${jsonServerUrl}/competencias`),
@@ -16,18 +15,16 @@ exports.getAll = async (req, res) => {
         const competencias = competenciasResponse.data;
         const relaciones = relacionesResponse.data;
 
-        // Crear un mapa de competencias para acceso directo por ID
         const competenciasMap = competencias.reduce((map, competencia) => {
             map[competencia.id] = competencia;
             return map;
         }, {});
 
-        // Asociar competencias con programas usando el mapa
         const programasConCompetencias = programas.map(programa => {
             const competenciasDePrograma = relaciones
-                .filter(relacion => relacion.programa_id === programa.id)
+                .filter(relacion => relacion.programa_id == programa.id)
                 .map(relacion => competenciasMap[relacion.competencia_id])
-                .filter(comp => comp);  // Elimina cualquier undefined si alguna competencia no fue encontrada
+                .filter(comp => comp);
 
             return { ...programa, competencias: competenciasDePrograma };
         });
@@ -40,7 +37,6 @@ exports.getAll = async (req, res) => {
         res.status(500).json({ message: 'Error al obtener programas' });
     }
 };
-
 
 
 exports.getById = async (req, res) => {
