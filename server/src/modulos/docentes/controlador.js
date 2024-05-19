@@ -36,7 +36,6 @@ module.exports = function (injectedController) {
             docente_id: docenteResult
         };
 
-        // Insertar datos del usuario
         const usuarioResult = await auth(injectedController).insert(usuarioData);
 
         return { docenteResult, usuarioResult };

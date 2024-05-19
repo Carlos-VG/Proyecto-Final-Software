@@ -1,6 +1,6 @@
 const mysqlx = require('@mysql/xdevapi');
 const config = require('../config');
-const logger = require('../logger'); // Módulo de registro personalizado
+const logger = require('../logger');
 
 const dbConfig = {
     host: config.mysql.host,
