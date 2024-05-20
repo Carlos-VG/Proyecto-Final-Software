@@ -10,28 +10,20 @@ async function getAll(table) {
     const db = await dbConnection.getConnection();
     const schema = await db.getSchema(dbConfig.database);
     const tableObj = schema.getTable(table);
-    const columnsMetadata = await db.sql(`SHOW COLUMNS FROM ${table}`).execute();
-    const columnNames = columnsMetadata.fetchAll().map(col => col[0]);
-    const result = await tableObj.select(columnNames).execute();
-
-    const rows = result.fetchAll();
-    const objects = rows.map(row => {
-        let obj = {};
-        row.forEach((value, index) => {
-            obj[columnNames[index]] = value;
-        });
-        return obj;
-    });
-
-    return objects;
+    const columnNames = (await db.sql(`SHOW COLUMNS FROM ${table}`).execute()).fetchAll().map(col => col[0]);
+    const rows = (await tableObj.select(columnNames).execute()).fetchAll();
+    return rows.map(row => Object.fromEntries(columnNames.map((col, i) => [col, row[i]])));
 }
 
 async function getOne(table, primaryKey, id) {
     const db = await dbConnection.getConnection();
-    const tableObj = db.getSchema(dbConfig.database).getTable(table);
-    const result = await tableObj.select().where(`${primaryKey} = :id`).bind('id', id).execute();
-    return result.fetchOne();
+    const schema = await db.getSchema(dbConfig.database);
+    const tableObj = schema.getTable(table);
+    const columnNames = (await db.sql(`SHOW COLUMNS FROM ${table}`).execute()).fetchAll().map(col => col[0]);
+    const row = (await tableObj.select(columnNames).where(`${primaryKey} = :id`).bind('id', id).execute()).fetchOne();
+    return row ? Object.fromEntries(columnNames.map((col, i) => [col, row[i]])) : null;
 }
+
 
 async function insert(table, data) {
     const db = await dbConnection.getConnection();

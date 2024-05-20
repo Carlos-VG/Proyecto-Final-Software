@@ -13,31 +13,21 @@ module.exports = function (injectedController) {
     }
 
     async function getAll() {
-        const [periodosResponse, programasResponse, relacionesResponse] = await Promise.all([
+        const [periodos, programas, relaciones] = await Promise.all([
             controller.getAll(TABLE_NAME),
-            axios.get(`${jsonServerUrl}/programas`),
+            axios.get(`${jsonServerUrl}/programas`).then(res => res.data),
             controller.getAll(TABLE_RELATION)
         ]);
 
-        const periodos = periodosResponse;
-        const programas = programasResponse.data;
-        const relaciones = relacionesResponse;
+        const programasMap = Object.fromEntries(programas.map(p => [p.id, p]));
 
-        const programasMap = programas.reduce((map, programa) => {
-            map[programa.id] = programa;
-            return map;
-        }, {});
-
-        const periodosConProgramas = periodos.map(periodo => {
-            const programasDePeriodo = relaciones
-                .filter(relacion => relacion.periodo_id === periodo.periodo_id)
-                .map(relacion => programasMap[relacion.programa_id])
-                .filter(prog => prog);
-
-            return { ...periodo, programas: programasDePeriodo };
-        });
-
-        return periodosConProgramas;
+        return periodos.map(periodo => ({
+            ...periodo,
+            programas: relaciones
+                .filter(r => r.periodo_id === periodo.periodo_id)
+                .map(r => programasMap[r.programa_id])
+                .filter(Boolean)
+        }));
     }
 
     async function getOne(id) {

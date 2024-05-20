@@ -13,7 +13,7 @@ router.get('/', getTodosLosDocentes);
 router.get('/:id', getUnDocente);
 router.post('/', seguridad(), agregarDocente);
 router.put('/:id', actualizarDocente);
-router.delete('/:id', eliminarDocente);
+router.put('/cambiarEstado/:id', cambiarEstadoDocente);
 
 /**
  * @brief Obtiene todos los docentes
@@ -72,16 +72,16 @@ async function actualizarDocente(req, res, next) {
 }
 
 /**
- * @brief Elimina un docente
- * @return Item Eliminado Satisfactoriamente
+ * @brief actualizar el estado de un docente
+ * @return estado actualizado
  * @param req peticion
  * @param res respuesta
  * @param next siguiente
  */
-async function eliminarDocente(req, res, next) {
+async function cambiarEstadoDocente(req, res, next) {
     try {
-        const item = await controlador.remove(req.params.id);
-        respuesta.success(req, res, 'Docente eliminado satisfactoriamente', 200);
+        const item = await controlador.changeState(req.params.id);
+        respuesta.success(req, res, 'Estado actualizado', 200);
     } catch (err) {
         next(err);
     }

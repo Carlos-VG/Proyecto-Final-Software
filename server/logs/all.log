@@ -568,3 +568,96 @@
 2024-05-19 18:53:51:5351 [32minfo[39m: [32mConexión a la base de datos establecida[39m
 2024-05-19 18:53:51:5351 [32minfo[39m: [32mTablas creadas correctamente[39m
 2024-05-19 18:53:55:5355 [35mhttp[39m: [35mSe obtuvieron todos los Periodos Academicos[39m
+2024-05-19 18:55:59:5559 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 18:55:59:5559 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 18:57:01:571 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 18:57:01:571 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 18:57:01:571 [35mhttp[39m: [35mSe obtuvieron todos los Periodos Academicos[39m
+2024-05-19 18:58:07:587 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 18:58:07:587 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 18:58:19:5819 [35mhttp[39m: [35mSe obtuvieron todos los Periodos Academicos[39m
+2024-05-19 19:01:28:128 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 19:01:28:128 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 19:01:59:159 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 19:01:59:159 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 19:02:20:220 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 19:02:20:220 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 19:05:04:54 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 19:05:04:54 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 19:06:35:635 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 19:06:35:635 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 19:07:50:750 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 19:07:50:750 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 20:27:21:2721 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 20:27:21:2721 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 20:27:57:2757 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 20:27:57:2757 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 20:35:21:3521 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 20:35:21:3521 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 20:35:49:3549 [35mhttp[39m: [35mSe obtuvieron todos los docentes[39m
+2024-05-19 20:36:15:3615 [35mhttp[39m: [35mSe obtuvieron todos los docentes[39m
+2024-05-19 20:38:56:3856 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 20:38:56:3856 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 20:39:01:391 [35mhttp[39m: [35mSe obtuvieron todos los docentes[39m
+2024-05-19 20:44:51:4451 [35mhttp[39m: [35mSe obtuvieron todos los docentes[39m
+2024-05-19 20:45:10:4510 [35mhttp[39m: [35mSe obtuvieron todos los docentes[39m
+2024-05-19 20:45:32:4532 [35mhttp[39m: [35mSe obtuvieron todos los docentes[39m
+2024-05-19 20:45:44:4544 [35mhttp[39m: [35mSe obtuvieron todos los docentes[39m
+2024-05-19 20:52:37:5237 [35mhttp[39m: [35mSe obtuvieron todos los Periodos Academicos[39m
+2024-05-19 20:55:42:5542 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 20:55:42:5542 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 21:04:59:459 [31merror[39m: [31mError al autenticar usuario[39m
+2024-05-19 21:06:46:646 [35mhttp[39m: [35mSe obtuvieron todos los docentes[39m
+2024-05-19 21:09:31:931 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 21:09:31:931 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 21:11:15:1115 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 21:11:16:1116 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 21:11:54:1154 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 21:11:54:1154 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 21:12:17:1217 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 21:12:18:1218 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 21:13:11:1311 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 21:13:11:1311 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 21:14:17:1417 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 21:14:17:1417 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 21:14:45:1445 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 21:14:45:1445 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 21:17:00:170 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 21:17:00:170 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 21:18:50:1850 [31merror[39m: [31mError al autenticar usuario[39m
+2024-05-19 21:19:06:196 [31merror[39m: [31mError al autenticar usuario[39m
+2024-05-19 21:19:27:1927 [31merror[39m: [31mError al autenticar usuario[39m
+2024-05-19 21:21:07:217 [32minfo[39m: [32mUsuario creado correctamente[39m
+2024-05-19 21:22:29:2229 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-19 21:24:35:2435 [35mhttp[39m: [35mSe obtuvieron todos los docentes[39m
+2024-05-19 21:26:20:2620 [32minfo[39m: [32mUsuario creado correctamente[39m
+2024-05-19 21:26:33:2633 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-19 21:32:25:3225 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 21:32:25:3225 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 21:32:28:3228 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 21:32:28:3228 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 21:32:51:3251 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 21:32:51:3251 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 21:33:35:3335 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 21:33:35:3335 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 21:38:51:3851 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 21:38:51:3851 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 21:39:16:3916 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 21:39:16:3916 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 21:40:18:4018 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 21:40:18:4018 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 21:42:33:4233 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 21:42:33:4233 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 21:45:50:4550 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-19 21:57:55:5755 [32minfo[39m: [32mProgramas con competencias obtenidos[39m
+2024-05-19 22:09:08:98 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 22:09:08:98 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 22:09:30:930 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 22:09:30:930 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 22:09:39:939 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 22:09:39:939 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 22:12:34:1234 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 22:12:34:1234 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 22:17:36:1736 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-19 22:17:36:1736 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-19 22:33:12:3312 [35mhttp[39m: [35mSe obtuvieron todos los docentes[39m

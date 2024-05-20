@@ -23,14 +23,14 @@ module.exports = function (injectedController) {
         if ('id' in dataToInsert) {
             dataToInsert.docente_id = dataToInsert.id;
             delete dataToInsert.id;
-            delete dataToInsert.login;
+            delete dataToInsert.usuario;
             delete dataToInsert.password;
-
         }
+
         const docenteResult = await controller.insert(TABLE_NAME, dataToInsert);
 
         let usuarioData = {
-            usuario: data.login,
+            usuario: data.usuario,
             password: data.password,
             rol: 'docente',
             docente_id: docenteResult
@@ -46,8 +46,17 @@ module.exports = function (injectedController) {
         return controller.update(TABLE_NAME, 'docente_id', dataToUpdate, id);
     }
 
-    async function remove(id) {
-        return controller.remove(TABLE_NAME, 'docente_id', id);
+    async function changeState(id) {
+        const obtenerDocente = await getOne(id);
+        // Cambiar el estado del docente
+        const nuevoEstado = obtenerDocente.Docente_estado === 1 ? 0 : 1;
+        // Preparar los datos para actualizar
+        const dataToUpdate = {
+            ...obtenerDocente, // Suponiendo que necesitamos pasar todos los datos actuales para actualizar
+            Docente_estado: nuevoEstado // Actualizar solo el estado
+        };
+        //retornar el docente con el nuevo estado
+        return await update(dataToUpdate, id);
     }
 
     return {
@@ -55,6 +64,6 @@ module.exports = function (injectedController) {
         getOne,
         insert,
         update,
-        remove,
+        changeState,
     };
 };
