@@ -718,3 +718,21 @@
 2024-05-20 12:09:10:910 [35mhttp[39m: [35mSe obtuvieron todos los Periodos Academicos[39m
 2024-05-20 12:09:40:940 [35mhttp[39m: [35mSe obtuvieron todos los Periodos Academicos[39m
 2024-05-20 12:09:57:957 [31merror[39m: [31mError al actualizar el Periodo Academico[39m
+2024-05-20 14:15:13:1513 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-20 14:15:13:1513 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-20 14:15:22:1522 [35mhttp[39m: [35mSe obtuvieron todos los Periodos Academicos[39m
+2024-05-20 14:16:07:167 [32minfo[39m: [32mProgramas con competencias obtenidos[39m
+2024-05-20 14:19:08:198 [35mhttp[39m: [35mSe obtuvo un ambiente[39m
+2024-05-20 14:19:15:1915 [35mhttp[39m: [35mSe obtuvieron todos los ambientes[39m
+2024-05-20 14:31:26:3126 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-20 14:31:26:3126 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-20 14:31:30:3130 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-20 14:33:54:3354 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-20 14:34:21:3421 [32minfo[39m: [32mPrograma y competencias agregadas satisfactoriamente[39m
+2024-05-20 14:34:22:3422 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-20 14:34:22:3422 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-20 14:34:27:3427 [32minfo[39m: [32mProgramas con competencias obtenidos[39m
+2024-05-20 14:34:43:3443 [32minfo[39m: [32mCompetencias obtenidas[39m
+2024-05-20 14:35:04:354 [35mhttp[39m: [35mSe obtuvieron todos los Periodos Academicos[39m
+2024-05-21 11:16:42:1642 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-21 11:16:42:1642 [32minfo[39m: [32mTablas creadas correctamente[39m

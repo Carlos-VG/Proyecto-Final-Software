@@ -127,6 +127,10 @@
     {
       "programa_nombre": "Prueba2",
       "id": 32
+    },
+    {
+      "programa_nombre": "Prueba2",
+      "id": 33
     }
   ],
   "competencias": [
@@ -911,6 +915,21 @@
       "programa_id": 32,
       "competencia_id": 3,
       "id": 96
+    },
+    {
+      "programa_id": 33,
+      "competencia_id": 1,
+      "id": 97
+    },
+    {
+      "programa_id": 33,
+      "competencia_id": 2,
+      "id": 98
+    },
+    {
+      "programa_id": 33,
+      "competencia_id": 3,
+      "id": 99
     }
   ]
 }
