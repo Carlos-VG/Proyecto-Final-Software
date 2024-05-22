@@ -3,8 +3,8 @@ import axios from 'axios';
 import { Routes, Route, Navigate, useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import CoordinadorView from './CoordinadorView';
-import DocenteView from './DocenteView';
+import CoordinadorView from './components/coordinador/CoordinadorView';
+import DocenteView from './components/Docentes/DocenteView';
 
 // Crear el contexto de autenticación
 const AuthContext = createContext();
