@@ -2,7 +2,6 @@ const express = require('express');
 const respuesta = require('../../red/respuestas');
 const controlador = require('./index');
 const logger = require('../../logger');
-const seguridad = require('../seguridad');
 const router = express.Router();
 
 

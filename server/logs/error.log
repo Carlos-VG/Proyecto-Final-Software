@@ -69,3 +69,8 @@
 2024-05-20 12:07:15:715 [31merror[39m: [31mError al agregar el Periodo Academico[39m
 2024-05-20 12:09:57:957 [31merror[39m: [31mError al actualizar el Periodo Academico[39m
 2024-05-21 19:03:32:332 [31merror[39m: [31mDocente no encontrado[39m
+2024-05-21 20:00:14:014 [31merror[39m: [31mError al crear usuario[39m
+2024-05-21 20:27:54:2754 [31merror[39m: [31mError al autenticar usuario[39m
+2024-05-21 20:33:32:3332 [31merror[39m: [31mError al autenticar usuario[39m
+2024-05-21 23:20:06:206 [31merror[39m: [31mError al autenticar usuario You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1[39m
+2024-05-22 14:23:59:2359 [31merror[39m: [31mError al conectar a la base de datos: read ECONNRESET[39m

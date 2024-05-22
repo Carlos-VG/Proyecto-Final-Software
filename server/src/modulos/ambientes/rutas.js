@@ -1,19 +1,19 @@
 const express = require('express');
 const respuesta = require('../../red/respuestas');
 const controlador = require('./index');
-const logger = require('../../logger'); // Módulo de registro personalizado
-const seguridad = require('../seguridad');
+const logger = require('../../logger');
+const seguridad = require('../../middleware/seguridad');
 const router = express.Router();
 
 
 /**
  * @brief Rutas de la entidad Ambiente
  */
-router.get('/', getTodosLosAmbientes);
-router.get('/:id', getUnAmbiente);
-router.post('/', agregarAmbiente);
-router.put('/:id', actualizarAmbiente);
-router.put('/cambiarEstado/:id', cambiarEstadoAmbiente);
+router.get('/', seguridad('coordinador'), getTodosLosAmbientes);
+router.get('/:id', seguridad('coordinador'), getUnAmbiente);
+router.post('/', seguridad('coordinador'), agregarAmbiente);
+router.put('/actualizar/:id', seguridad('coordinador'), actualizarAmbiente);
+router.put('/cambiarEstado/:id', seguridad('coordinador'), cambiarEstadoAmbiente);
 
 /**
  * @brief Obtiene todos los ambientes

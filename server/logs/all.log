@@ -812,3 +812,107 @@
 2024-05-21 19:16:39:1639 [32minfo[39m: [32mUsuario creado correctamente[39m
 2024-05-21 19:47:33:4733 [32minfo[39m: [32mConexión a la base de datos establecida[39m
 2024-05-21 19:47:33:4733 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-21 19:59:44:5944 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-21 19:59:44:5944 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-21 20:00:14:014 [31merror[39m: [31mError al crear usuario[39m
+2024-05-21 20:02:36:236 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-21 20:05:34:534 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-21 20:05:34:534 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-21 20:06:12:612 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-21 20:06:12:612 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-21 20:27:54:2754 [31merror[39m: [31mError al autenticar usuario[39m
+2024-05-21 20:30:16:3016 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-21 20:33:13:3313 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-21 20:33:13:3313 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-21 20:33:32:3332 [31merror[39m: [31mError al autenticar usuario[39m
+2024-05-21 23:18:27:1827 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-21 23:18:27:1827 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-21 23:19:52:1952 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-21 23:19:52:1952 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-21 23:20:06:206 [31merror[39m: [31mError al autenticar usuario You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1[39m
+2024-05-21 23:23:49:2349 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-21 23:23:49:2349 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-21 23:23:54:2354 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-21 23:24:39:2439 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-21 23:25:12:2512 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-21 23:25:38:2538 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-21 23:27:16:2716 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-21 23:29:10:2910 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-21 23:29:10:2910 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-21 23:29:24:2924 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-21 23:29:24:2924 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-21 23:29:27:2927 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-21 23:29:27:2927 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-21 23:32:25:3225 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-21 23:32:25:3225 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-21 23:32:35:3235 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-21 23:32:35:3235 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-21 23:32:37:3237 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-21 23:54:10:5410 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-21 23:54:10:5410 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-21 23:54:41:5441 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-21 23:54:41:5441 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-21 23:54:45:5445 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-21 23:54:45:5445 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-21 23:55:07:557 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-21 23:56:16:5616 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-21 23:56:16:5616 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-21 23:56:51:5651 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-21 23:56:51:5651 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-21 23:57:09:579 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-21 23:58:37:5837 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-21 23:58:37:5837 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-21 23:58:46:5846 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-21 23:58:46:5846 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-21 23:59:00:590 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 00:22:14:2214 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 00:22:14:2214 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 00:22:20:2220 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 00:27:31:2731 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 00:30:36:3036 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 00:31:25:3125 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 00:32:02:322 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 00:33:48:3348 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 00:35:35:3535 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 00:35:48:3548 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 00:36:05:365 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 00:48:45:4845 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 00:49:16:4916 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 00:58:26:5826 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 00:59:17:5917 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 00:59:30:5930 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 01:00:25:025 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 01:00:25:025 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 01:01:14:114 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 01:01:15:115 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 14:23:59:2359 [31merror[39m: [31mError al conectar a la base de datos: read ECONNRESET[39m
+2024-05-22 14:24:32:2432 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 14:24:32:2432 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 14:25:37:2537 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 14:25:38:2538 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 14:28:42:2842 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 14:28:43:2843 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 14:29:05:295 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 14:29:10:2910 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 14:44:58:4458 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 14:45:00:450 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 14:45:00:450 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 14:45:36:4536 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 14:45:38:4538 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 14:45:56:4556 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 14:45:57:4557 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 14:49:59:4959 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 14:55:57:5557 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 14:56:20:5620 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 14:56:49:5649 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 15:10:17:1017 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 15:12:57:1257 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 15:13:25:1325 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 15:45:34:4534 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 15:45:47:4547 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 15:55:41:5541 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 15:55:41:5541 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 15:56:28:5628 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 15:56:28:5628 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 15:56:47:5647 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 15:56:56:5656 [32minfo[39m: [32mUsuario autenticado correctamente[39m

@@ -2,18 +2,18 @@ const express = require('express');
 const respuesta = require('../../red/respuestas');
 const controlador = require('./index');
 const logger = require('../../logger'); // Módulo de registro personalizado
-const seguridad = require('../seguridad');
+const seguridad = require('../../middleware/seguridad');
 const router = express.Router();
 
 
 /**
  * @brief Rutas de la entidad docente
  */
-router.get('/', getTodosLosDocentes);
-router.get('/perfil', seguridad(['coordinador', 'docente']), getUnDocente);
+router.get('/', seguridad('coordinador'), getTodosLosDocentes);
+router.get('/unDocente/:id?', seguridad(['coordinador', 'docente']), getUnDocente);
 router.post('/', seguridad('coordinador'), agregarDocente);
-router.put('/:id', actualizarDocente);
-router.put('/cambiarEstado/:id', cambiarEstadoDocente);
+router.put('/actualizar/:id', seguridad('coordinador'), actualizarDocente);
+router.put('/cambiarEstado/:id', seguridad('coordinador'), cambiarEstadoDocente);
 
 /**
  * @brief Obtiene todos los docentes
@@ -39,7 +39,12 @@ async function getTodosLosDocentes(req, res, next) {
 async function getUnDocente(req, res, next) {
     try {
         // Obtener el ID del docente directamente del token
-        const idDocente = req.user.docente_id;
+        let idDocente;
+        if (req.user.role === 'coordinador' && req.params.id) {
+            idDocente = req.params.id;
+        } else {
+            idDocente = req.user.docente_id;
+        }
         const item = await controlador.getOne(idDocente);
         if (!item) {
             logger.error('Docente no encontrado');
@@ -47,7 +52,7 @@ async function getUnDocente(req, res, next) {
         }
         respuesta.success(req, res, item, 200);
     } catch (err) {
-        respuesta.error(req, res, 'Error al procesar la solicitud', 500, err.message);
+        next(err);
     }
 }
 

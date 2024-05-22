@@ -1,6 +1,5 @@
 const express = require('express');
 const controlador = require('./controlador');
-const seguridad = require('../seguridad');
 const router = express.Router();
 
 /**

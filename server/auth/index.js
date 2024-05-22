@@ -4,11 +4,18 @@ config = require('../src/config');
 const secret = config.jwt.secret;
 
 function asignarToken(data) {
-    return jwt.sign(data, secret);
+    return jwt.sign(data, secret, { expiresIn: '1h' });
 }
 
 function verificarToken(token) {
-    return jwt.verify(token, secret);
+    try {
+        return jwt.verify(token, secret);
+    } catch (error) {
+        if (error.name === 'TokenExpiredError') {
+            throw new Error('El token ha expirado');
+        }
+        throw new Error('Token inválido');
+    }
 }
 
 const chequearToken = {
@@ -26,6 +33,10 @@ const chequearToken = {
             username: decodificado.username,
             docente_id: decodificado.docente_id
         };
+
+        if (decodificado.role === 'docente' && req.params.id && req.params.id.toString() !== decodificado.docente_id.toString()) {
+            throw new Error('Acceso denegado a este recurso');
+        }
     }
 };
 

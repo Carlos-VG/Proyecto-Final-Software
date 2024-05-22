@@ -2,11 +2,13 @@ const express = require('express');
 const respuesta = require('../../red/respuestas');
 const controlador = require('./index');
 const logger = require('../../logger'); // Módulo de registro personalizado
+const seguridad = require('../../middleware/seguridad');
 const router = express.Router();
 
 
-router.get('/login', login);
+router.post('/login', login);
 router.post('/', insertarUsuario);
+router.get('/rol', seguridad(['coordinador', 'docente']), verificarRol);
 
 /**
  * @brief Rutas de la entidad Usuarios
@@ -31,6 +33,15 @@ async function insertarUsuario(req, res, next) {
     } catch (error) {
         next(error);
         logger.error('Error al crear usuario');
+    }
+}
+
+async function verificarRol(req, res, next) {
+    try {
+        let rolObtenido = req.user.role;
+        respuesta.success(req, res, rolObtenido, 200);
+    } catch (err) {
+        next(err);
     }
 }
 
