@@ -916,3 +916,326 @@
 2024-05-22 15:56:28:5628 [32minfo[39m: [32mTablas creadas correctamente[39m
 2024-05-22 15:56:47:5647 [32minfo[39m: [32mUsuario autenticado correctamente[39m
 2024-05-22 15:56:56:5656 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 16:20:55:2055 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 16:20:55:2055 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 16:21:02:212 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 16:32:05:325 [32minfo[39m: [32mUsuario creado correctamente[39m
+2024-05-22 16:41:25:4125 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 16:41:25:4125 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 16:41:33:4133 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 16:41:33:4133 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 16:42:08:428 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 16:42:08:428 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 16:42:32:4232 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 16:42:32:4232 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 16:42:41:4241 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 16:42:41:4241 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 16:43:07:437 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 16:43:46:4346 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 16:43:46:4346 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 16:44:58:4458 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 16:44:58:4458 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 16:46:31:4631 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 16:46:31:4631 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 16:46:52:4652 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 16:46:52:4652 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 16:49:28:4928 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 16:49:28:4928 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 16:49:32:4932 [35mhttp[39m: [35mSe agregó un ambiente[39m
+2024-05-22 16:52:13:5213 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 16:52:13:5213 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 17:03:48:348 [35mhttp[39m: [35mSe agregó un ambiente[39m
+2024-05-22 17:04:40:440 [35mhttp[39m: [35mSe agregó un ambiente[39m
+2024-05-22 17:05:08:58 [35mhttp[39m: [35mSe agregó un ambiente[39m
+2024-05-22 17:05:18:518 [35mhttp[39m: [35mSe agregó un ambiente[39m
+2024-05-22 17:06:26:626 [31merror[39m: [31mError al obtener programas[39m
+2024-05-22 17:06:31:631 [31merror[39m: [31mError al obtener programas[39m
+2024-05-22 17:06:54:654 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 17:06:54:654 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 17:07:06:76 [32minfo[39m: [32mProgramas con competencias obtenidos[39m
+2024-05-22 17:07:18:718 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 17:07:18:718 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 17:07:37:737 [32minfo[39m: [32mPrograma con id 23 obtenido[39m
+2024-05-22 17:07:57:757 [32minfo[39m: [32mPrograma con id 23 obtenido[39m
+2024-05-22 17:08:07:87 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 17:08:07:87 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 17:08:25:825 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 17:08:25:825 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 17:09:48:948 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 17:09:48:948 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 17:10:22:1022 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 17:11:22:1122 [32minfo[39m: [32mPrograma y competencias agregadas satisfactoriamente[39m
+2024-05-22 17:11:22:1122 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 17:11:22:1122 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 17:12:03:123 [32minfo[39m: [32mPrograma con id 34 obtenido[39m
+2024-05-22 17:14:16:1416 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 17:14:16:1416 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 17:14:42:1442 [31merror[39m: [31mError al actualizar programa y competencias read ECONNRESET[39m
+2024-05-22 17:14:43:1443 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 17:14:43:1443 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 17:22:07:227 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 17:22:07:227 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 17:22:30:2230 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 17:22:30:2230 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 17:22:38:2238 [32minfo[39m: [32mPrograma y competencias agregadas satisfactoriamente[39m
+2024-05-22 17:22:38:2238 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 17:22:38:2238 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 17:22:44:2244 [31merror[39m: [31mError creando relación con competencia 23 read ECONNRESET[39m
+2024-05-22 17:22:44:2244 [31merror[39m: [31mError al actualizar programa y competencias read ECONNRESET[39m
+2024-05-22 17:22:44:2244 [31merror[39m: [31mError creando relación con competencia 40 read ECONNRESET[39m
+2024-05-22 17:22:44:2244 [31merror[39m: [31mError creando relación con competencia 2 read ECONNRESET[39m
+2024-05-22 17:22:44:2244 [31merror[39m: [31mError creando relación con competencia 1[39m
+2024-05-22 17:22:45:2245 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 17:22:45:2245 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 17:27:00:270 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 17:27:00:270 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 17:27:17:2717 [32minfo[39m: [32mPrograma y competencias actualizadas satisfactoriamente[39m
+2024-05-22 17:27:18:2718 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 17:27:18:2718 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 17:27:32:2732 [32minfo[39m: [32mPrograma con id 34 obtenido[39m
+2024-05-22 17:27:48:2748 [31merror[39m: [31mError al actualizar programa y competencias read ECONNRESET[39m
+2024-05-22 17:27:49:2749 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 17:27:49:2749 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 17:28:03:283 [32minfo[39m: [32mPrograma y competencias actualizadas satisfactoriamente[39m
+2024-05-22 17:28:04:284 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 17:28:04:284 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 17:28:28:2828 [31merror[39m: [31mError al actualizar programa y competencias read ECONNRESET[39m
+2024-05-22 17:28:28:2828 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 17:28:28:2828 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 17:28:30:2830 [32minfo[39m: [32mPrograma y competencias actualizadas satisfactoriamente[39m
+2024-05-22 17:28:30:2830 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 17:28:30:2830 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 17:32:37:3237 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 17:32:37:3237 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 17:33:07:337 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 17:33:07:337 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 17:33:22:3322 [31merror[39m: [31mError al actualizar programa y competencias Error en la actualización de relaciones[39m
+2024-05-22 17:33:22:3322 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 17:33:22:3322 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 17:37:36:3736 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 17:45:01:451 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 17:45:01:451 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 17:45:13:4513 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 17:45:13:4513 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 17:45:19:4519 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 17:45:38:4538 [32minfo[39m: [32mPrograma con id 34 obtenido[39m
+2024-05-22 17:46:08:468 [32minfo[39m: [32mPrograma y competencias actualizadas satisfactoriamente[39m
+2024-05-22 17:46:09:469 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 17:46:09:469 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 17:46:14:4614 [32minfo[39m: [32mPrograma con id 34 obtenido[39m
+2024-05-22 17:46:26:4626 [31merror[39m: [31mError en post request, reintentando... read ECONNRESET[39m
+2024-05-22 17:46:26:4626 [31merror[39m: [31mError en post request, reintentando... read ECONNRESET[39m
+2024-05-22 17:46:26:4626 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 17:46:26:4626 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 17:46:40:4640 [32minfo[39m: [32mPrograma y competencias actualizadas satisfactoriamente[39m
+2024-05-22 17:46:41:4641 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 17:46:41:4641 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 17:46:55:4655 [31merror[39m: [31mError en post request, reintentando... socket hang up[39m
+2024-05-22 17:46:55:4655 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 17:46:55:4655 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 17:47:00:470 [32minfo[39m: [32mPrograma y competencias actualizadas satisfactoriamente[39m
+2024-05-22 17:47:00:470 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 17:47:00:470 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 17:47:21:4721 [32minfo[39m: [32mPrograma y competencias actualizadas satisfactoriamente[39m
+2024-05-22 17:47:22:4722 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 17:47:22:4722 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 17:47:36:4736 [32minfo[39m: [32mPrograma y competencias actualizadas satisfactoriamente[39m
+2024-05-22 17:47:37:4737 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 17:47:37:4737 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 17:48:10:4810 [32minfo[39m: [32mPrograma con id 34 obtenido[39m
+2024-05-22 17:48:17:4817 [32minfo[39m: [32mPrograma y competencias actualizadas satisfactoriamente[39m
+2024-05-22 17:48:18:4818 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 17:48:18:4818 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 17:48:22:4822 [32minfo[39m: [32mPrograma con id 34 obtenido[39m
+2024-05-22 17:58:07:587 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 17:58:07:587 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 17:58:10:5810 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 17:58:23:5823 [31merror[39m: [31mError en put request, reintentando... Request failed with status code 404[39m
+2024-05-22 17:58:24:5824 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 17:58:24:5824 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 17:58:26:5826 [31merror[39m: [31mError en put request, reintentando... Request failed with status code 404[39m
+2024-05-22 17:58:27:5827 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 17:58:27:5827 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 17:58:28:5828 [31merror[39m: [31mError en put request, reintentando... Request failed with status code 404[39m
+2024-05-22 17:58:29:5829 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 17:58:29:5829 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 17:58:29:5829 [31merror[39m: [31mError en put request, reintentando... Request failed with status code 404[39m
+2024-05-22 17:58:30:5830 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 17:58:30:5830 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 17:58:52:5852 [31merror[39m: [31mError al actualizar estado de programa Request failed with status code 404[39m
+2024-05-22 17:58:56:5856 [31merror[39m: [31mError al actualizar estado de programa Request failed with status code 404[39m
+2024-05-22 17:58:57:5857 [31merror[39m: [31mError al actualizar estado de programa Request failed with status code 404[39m
+2024-05-22 17:59:23:5923 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 17:59:23:5923 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 17:59:30:5930 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 17:59:45:5945 [32minfo[39m: [32mProgramas con competencias obtenidos[39m
+2024-05-22 18:01:16:116 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:01:16:116 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:01:19:119 [32minfo[39m: [32mProgramas con competencias obtenidos[39m
+2024-05-22 18:03:47:347 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:03:47:347 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:03:52:352 [31merror[39m: [31mError al obtener el programa con id 34[39m
+2024-05-22 18:04:17:417 [32minfo[39m: [32mPrograma con id 28 obtenido[39m
+2024-05-22 18:05:46:546 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:05:46:546 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:05:59:559 [32minfo[39m: [32mEstado de programa actualizado satisfactoriamente[39m
+2024-05-22 18:06:00:60 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:06:00:60 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:06:14:614 [32minfo[39m: [32mPrograma con id 30 obtenido[39m
+2024-05-22 18:06:38:638 [32minfo[39m: [32mEstado de programa actualizado satisfactoriamente[39m
+2024-05-22 18:06:38:638 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:06:38:638 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:07:05:75 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:07:05:75 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:07:15:715 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:07:15:715 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:07:20:720 [32minfo[39m: [32mPrograma con id 30 obtenido[39m
+2024-05-22 18:07:25:725 [32minfo[39m: [32mEstado de programa actualizado satisfactoriamente[39m
+2024-05-22 18:07:26:726 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:07:26:726 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:07:50:750 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:07:50:750 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:07:59:759 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:07:59:759 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:08:04:84 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:08:04:84 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:08:08:88 [32minfo[39m: [32mPrograma con id 30 obtenido[39m
+2024-05-22 18:08:13:813 [32minfo[39m: [32mEstado de programa actualizado satisfactoriamente[39m
+2024-05-22 18:08:14:814 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:08:14:814 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:08:17:817 [32minfo[39m: [32mPrograma con id 30 obtenido[39m
+2024-05-22 18:09:26:926 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:09:26:926 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:09:41:941 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:09:41:941 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:12:30:1230 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:12:30:1230 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:14:09:149 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:14:09:149 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:16:11:1611 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:16:11:1611 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:19:11:1911 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:19:11:1911 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:19:45:1945 [32minfo[39m: [32mCompetencias obtenidas[39m
+2024-05-22 18:20:00:200 [32minfo[39m: [32mCompetencia con id 30 obtenida[39m
+2024-05-22 18:21:28:2128 [32minfo[39m: [32mCompetencia insertada[39m
+2024-05-22 18:21:29:2129 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:21:29:2129 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:22:13:2213 [32minfo[39m: [32mCompetencia con id 51 actualizada[39m
+2024-05-22 18:22:13:2213 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:22:13:2213 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:22:20:2220 [32minfo[39m: [32mCompetencia con id 51 obtenida[39m
+2024-05-22 18:22:46:2246 [32minfo[39m: [32mCompetencia con id 40 obtenida[39m
+2024-05-22 18:23:18:2318 [32minfo[39m: [32mCompetencia con id 51 obtenida[39m
+2024-05-22 18:24:42:2442 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:24:42:2442 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:24:47:2447 [32minfo[39m: [32mCompetencia insertada[39m
+2024-05-22 18:24:48:2448 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:24:48:2448 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:25:23:2523 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:25:23:2523 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:25:34:2534 [32minfo[39m: [32mCompetencia con id 51 obtenida[39m
+2024-05-22 18:25:42:2542 [32minfo[39m: [32mCompetencia con id 51 actualizada[39m
+2024-05-22 18:25:43:2543 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:25:43:2543 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:25:49:2549 [32minfo[39m: [32mCompetencia con id 51 obtenida[39m
+2024-05-22 18:26:09:269 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:26:09:269 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:26:23:2623 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:26:23:2623 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:26:42:2642 [32minfo[39m: [32mCompetencia insertada[39m
+2024-05-22 18:26:43:2643 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:26:43:2643 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:26:46:2646 [32minfo[39m: [32mCompetencia con id 51 obtenida[39m
+2024-05-22 18:26:53:2653 [32minfo[39m: [32mCompetencia con id 51 actualizada[39m
+2024-05-22 18:26:54:2654 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:26:54:2654 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:27:01:271 [32minfo[39m: [32mCompetencia con id 51 obtenida[39m
+2024-05-22 18:27:07:277 [32minfo[39m: [32mCompetencia con id 51 actualizada[39m
+2024-05-22 18:27:08:278 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:27:08:278 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:27:10:2710 [32minfo[39m: [32mCompetencia con id 51 obtenida[39m
+2024-05-22 18:27:40:2740 [32minfo[39m: [32mCompetencia con id 51 actualizada[39m
+2024-05-22 18:27:40:2740 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:27:40:2740 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:27:47:2747 [32minfo[39m: [32mCompetencia con id 51 obtenida[39m
+2024-05-22 18:28:05:285 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:28:05:285 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:29:34:2934 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:29:34:2934 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:29:40:2940 [32minfo[39m: [32mCompetencia insertada[39m
+2024-05-22 18:29:41:2941 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:29:41:2941 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:29:47:2947 [32minfo[39m: [32mCompetencia con id 51 actualizada[39m
+2024-05-22 18:29:48:2948 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:29:48:2948 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:30:08:308 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:30:08:308 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:30:29:3029 [32minfo[39m: [32mPrograma con id 30 obtenido[39m
+2024-05-22 18:30:34:3034 [32minfo[39m: [32mEstado de programa actualizado satisfactoriamente[39m
+2024-05-22 18:30:35:3035 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:30:35:3035 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:30:38:3038 [32minfo[39m: [32mPrograma con id 30 obtenido[39m
+2024-05-22 18:31:39:3139 [32minfo[39m: [32mCompetencia insertada[39m
+2024-05-22 18:31:40:3140 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:31:40:3140 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:32:12:3212 [32minfo[39m: [32mCompetencia con id 51 obtenida[39m
+2024-05-22 18:33:28:3328 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:33:28:3328 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:33:59:3359 [31merror[39m: [31mError al actualizar estado de programa Request failed with status code 404[39m
+2024-05-22 18:34:26:3426 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:34:26:3426 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:34:30:3430 [31merror[39m: [31mError al actualizar estado de una competencia Request failed with status code 404[39m
+2024-05-22 18:34:46:3446 [31merror[39m: [31mError al actualizar estado de una competencia Request failed with status code 404[39m
+2024-05-22 18:34:54:3454 [32minfo[39m: [32mEstado de programa actualizado satisfactoriamente[39m
+2024-05-22 18:34:55:3455 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:34:55:3455 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:34:58:3458 [32minfo[39m: [32mEstado de programa actualizado satisfactoriamente[39m
+2024-05-22 18:34:58:3458 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:34:58:3458 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:35:15:3515 [32minfo[39m: [32mCompetencia con id 51 obtenida[39m
+2024-05-22 18:35:25:3525 [32minfo[39m: [32mCompetencia con id 51 actualizada[39m
+2024-05-22 18:35:26:3526 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:35:26:3526 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:35:31:3531 [32minfo[39m: [32mCompetencia con id 51 obtenida[39m
+2024-05-22 18:36:01:361 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:36:01:361 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:36:09:369 [32minfo[39m: [32mEstado de competencia con id 51 actualizado[39m
+2024-05-22 18:36:09:369 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:36:09:369 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:36:54:3654 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:36:55:3655 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:37:05:375 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:37:05:375 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:37:15:3715 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:37:15:3715 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:37:18:3718 [32minfo[39m: [32mEstado de competencia con id 51 actualizado[39m
+2024-05-22 18:37:19:3719 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:37:19:3719 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:37:20:3720 [32minfo[39m: [32mEstado de competencia con id 51 actualizado[39m
+2024-05-22 18:37:21:3721 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:37:21:3721 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:37:21:3721 [32minfo[39m: [32mEstado de competencia con id 51 actualizado[39m
+2024-05-22 18:37:22:3722 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:37:22:3722 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:37:23:3723 [32minfo[39m: [32mEstado de competencia con id 51 actualizado[39m
+2024-05-22 18:37:24:3724 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:37:24:3724 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:38:21:3821 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:38:21:3821 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:38:51:3851 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 18:39:08:398 [32minfo[39m: [32mPrograma y competencias agregadas satisfactoriamente[39m
+2024-05-22 18:39:09:399 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:39:09:399 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:39:16:3916 [32minfo[39m: [32mPrograma con id 31 obtenido[39m
+2024-05-22 18:39:33:3933 [31merror[39m: [31mError en post request, reintentando... read ECONNRESET[39m
+2024-05-22 18:39:33:3933 [31merror[39m: [31mError en post request, reintentando... socket hang up[39m
+2024-05-22 18:39:34:3934 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:39:34:3934 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:39:45:3945 [32minfo[39m: [32mPrograma y competencias actualizadas satisfactoriamente[39m
+2024-05-22 18:39:46:3946 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:39:46:3946 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 18:39:55:3955 [32minfo[39m: [32mPrograma con id 31 obtenido[39m
+2024-05-22 18:40:04:404 [32minfo[39m: [32mEstado de la competencia con id 31 actualizado[39m
+2024-05-22 18:40:05:405 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 18:40:05:405 [32minfo[39m: [32mTablas creadas correctamente[39m

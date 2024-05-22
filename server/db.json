@@ -2,135 +2,158 @@
   "programas": [
     {
       "id": 1,
-      "programa_nombre": "Ingeniería de Sistemas"
+      "programa_nombre": "Ingeniería de Sistemas",
+      "programa_estado": 1
     },
     {
       "id": 2,
-      "programa_nombre": "Administración de Empresas"
+      "programa_nombre": "Administración de Empresas",
+      "programa_estado": 1
     },
     {
       "id": 3,
-      "programa_nombre": "Psicología"
+      "programa_nombre": "Psicología",
+      "programa_estado": 1
     },
     {
       "id": 4,
-      "programa_nombre": "Derecho"
+      "programa_nombre": "Derecho",
+      "programa_estado": 1
     },
     {
       "id": 5,
-      "programa_nombre": "Medicina"
+      "programa_nombre": "Medicina",
+      "programa_estado": 1
     },
     {
       "id": 6,
-      "programa_nombre": "Biología"
+      "programa_nombre": "Biología",
+      "programa_estado": 1
     },
     {
       "id": 7,
-      "programa_nombre": "Arquitectura"
+      "programa_nombre": "Arquitectura",
+      "programa_estado": 1
     },
     {
       "id": 8,
-      "programa_nombre": "Ingeniería Civil"
+      "programa_nombre": "Ingeniería Civil",
+      "programa_estado": 1
     },
     {
       "id": 9,
-      "programa_nombre": "Ingeniería Electrónica"
+      "programa_nombre": "Ingeniería Electrónica",
+      "programa_estado": 1
     },
     {
       "id": 10,
-      "programa_nombre": "Ingeniería Ambiental"
+      "programa_nombre": "Ingeniería Ambiental",
+      "programa_estado": 1
     },
     {
       "id": 11,
-      "programa_nombre": "Artes Plásticas"
+      "programa_nombre": "Artes Plásticas",
+      "programa_estado": 1
     },
     {
       "id": 12,
-      "programa_nombre": "Música"
+      "programa_nombre": "Música",
+      "programa_estado": 1
     },
     {
       "id": 13,
-      "programa_nombre": "Historia"
+      "programa_nombre": "Historia",
+      "programa_estado": 1
     },
     {
       "id": 14,
-      "programa_nombre": "Literatura"
+      "programa_nombre": "Literatura",
+      "programa_estado": 1
     },
     {
       "id": 15,
-      "programa_nombre": "Filosofía"
+      "programa_nombre": "Filosofía",
+      "programa_estado": 1
     },
     {
       "id": 16,
-      "programa_nombre": "Educación Física"
+      "programa_nombre": "Educación Física",
+      "programa_estado": 1
     },
     {
       "id": 17,
-      "programa_nombre": "Nutrición y Dietética"
+      "programa_nombre": "Nutrición y Dietética",
+      "programa_estado": 1
     },
     {
       "id": 18,
-      "programa_nombre": "Química"
+      "programa_nombre": "Química",
+      "programa_estado": 1
     },
     {
       "id": 19,
-      "programa_nombre": "Física"
+      "programa_nombre": "Física",
+      "programa_estado": 1
     },
     {
       "id": 20,
-      "programa_nombre": "Matemáticas"
+      "programa_nombre": "Matemáticas",
+      "programa_estado": 1
     },
     {
       "id": 21,
-      "programa_nombre": "Veterinaria"
+      "programa_nombre": "Veterinaria",
+      "programa_estado": 1
     },
     {
       "id": 22,
-      "programa_nombre": "Ingeniería Química"
+      "programa_nombre": "Ingeniería Química",
+      "programa_estado": 1
     },
     {
       "id": 23,
-      "programa_nombre": "Ingeniería de Telecomunicaciones"
+      "programa_nombre": "Ingeniería de Telecomunicaciones",
+      "programa_estado": 1
     },
     {
       "id": 24,
-      "programa_nombre": "Ingeniería Mecánica"
+      "programa_nombre": "Ingeniería Mecánica",
+      "programa_estado": 1
     },
     {
       "id": 25,
-      "programa_nombre": "Marketing"
+      "programa_nombre": "Marketing",
+      "programa_estado": 1
     },
     {
       "id": 26,
-      "programa_nombre": "Periodismo"
+      "programa_nombre": "Periodismo",
+      "programa_estado": 1
     },
     {
       "id": 27,
-      "programa_nombre": "Antropología"
+      "programa_nombre": "Antropología",
+      "programa_estado": 1
     },
     {
       "id": 28,
-      "programa_nombre": "Sociología"
+      "programa_nombre": "Sociología",
+      "programa_estado": 1
     },
     {
       "id": 29,
-      "programa_nombre": "Trabajo Social"
+      "programa_nombre": "Trabajo Social",
+      "programa_estado": 1
     },
     {
       "id": 30,
-      "programa_nombre": "Turismo y Hotelería"
+      "programa_nombre": "Turismo y Hotelería",
+      "programa_estado": 1
     },
     {
-      "programa_nombre": "Prueba",
+      "programa_nombre": "Prueba hola",
+      "programa_estado": 0,
       "id": 31
-    },
-    {
-      "programa_nombre": "Prueba2",
-      "id": 32
-    },
-    {
-      "programa_nombre": "Prueba2",
-      "id": 33
     }
   ],
   "competencias": [
@@ -888,48 +911,13 @@
     },
     {
       "programa_id": 31,
-      "competencia_id": 1,
+      "competencia_id": 23,
       "id": 91
     },
     {
       "programa_id": 31,
-      "competencia_id": 2,
+      "competencia_id": 49,
       "id": 92
-    },
-    {
-      "programa_id": 31,
-      "competencia_id": 3,
-      "id": 93
-    },
-    {
-      "programa_id": 32,
-      "competencia_id": 1,
-      "id": 94
-    },
-    {
-      "programa_id": 32,
-      "competencia_id": 2,
-      "id": 95
-    },
-    {
-      "programa_id": 32,
-      "competencia_id": 3,
-      "id": 96
-    },
-    {
-      "programa_id": 33,
-      "competencia_id": 1,
-      "id": 97
-    },
-    {
-      "programa_id": 33,
-      "competencia_id": 2,
-      "id": 98
-    },
-    {
-      "programa_id": 33,
-      "competencia_id": 3,
-      "id": 99
     }
   ]
 }

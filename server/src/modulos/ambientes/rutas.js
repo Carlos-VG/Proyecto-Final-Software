@@ -3,6 +3,7 @@ const respuesta = require('../../red/respuestas');
 const controlador = require('./index');
 const logger = require('../../logger');
 const seguridad = require('../../middleware/seguridad');
+const ambientePreprocessor = require('../../middleware/ambientePreprocessor');
 const router = express.Router();
 
 
@@ -11,7 +12,7 @@ const router = express.Router();
  */
 router.get('/', seguridad('coordinador'), getTodosLosAmbientes);
 router.get('/:id', seguridad('coordinador'), getUnAmbiente);
-router.post('/', seguridad('coordinador'), agregarAmbiente);
+router.post('/', seguridad('coordinador'), ambientePreprocessor, agregarAmbiente);
 router.put('/actualizar/:id', seguridad('coordinador'), actualizarAmbiente);
 router.put('/cambiarEstado/:id', seguridad('coordinador'), cambiarEstadoAmbiente);
 
@@ -58,7 +59,7 @@ async function getUnAmbiente(req, res, next) {
  */
 async function agregarAmbiente(req, res, next) {
     try {
-        const item = await controlador.insert(req.body);
+        const item = await controlador.insert(req.ambienteData);
         respuesta.success(req, res, 'Ambiente agregado satisfactoriamente', 201);
         logger.http('Se agregó un ambiente')
     } catch (err) {

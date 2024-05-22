@@ -74,3 +74,30 @@
 2024-05-21 20:33:32:3332 [31merror[39m: [31mError al autenticar usuario[39m
 2024-05-21 23:20:06:206 [31merror[39m: [31mError al autenticar usuario You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1[39m
 2024-05-22 14:23:59:2359 [31merror[39m: [31mError al conectar a la base de datos: read ECONNRESET[39m
+2024-05-22 17:06:26:626 [31merror[39m: [31mError al obtener programas[39m
+2024-05-22 17:06:31:631 [31merror[39m: [31mError al obtener programas[39m
+2024-05-22 17:14:42:1442 [31merror[39m: [31mError al actualizar programa y competencias read ECONNRESET[39m
+2024-05-22 17:22:44:2244 [31merror[39m: [31mError creando relación con competencia 23 read ECONNRESET[39m
+2024-05-22 17:22:44:2244 [31merror[39m: [31mError al actualizar programa y competencias read ECONNRESET[39m
+2024-05-22 17:22:44:2244 [31merror[39m: [31mError creando relación con competencia 40 read ECONNRESET[39m
+2024-05-22 17:22:44:2244 [31merror[39m: [31mError creando relación con competencia 2 read ECONNRESET[39m
+2024-05-22 17:22:44:2244 [31merror[39m: [31mError creando relación con competencia 1[39m
+2024-05-22 17:27:48:2748 [31merror[39m: [31mError al actualizar programa y competencias read ECONNRESET[39m
+2024-05-22 17:28:28:2828 [31merror[39m: [31mError al actualizar programa y competencias read ECONNRESET[39m
+2024-05-22 17:33:22:3322 [31merror[39m: [31mError al actualizar programa y competencias Error en la actualización de relaciones[39m
+2024-05-22 17:46:26:4626 [31merror[39m: [31mError en post request, reintentando... read ECONNRESET[39m
+2024-05-22 17:46:26:4626 [31merror[39m: [31mError en post request, reintentando... read ECONNRESET[39m
+2024-05-22 17:46:55:4655 [31merror[39m: [31mError en post request, reintentando... socket hang up[39m
+2024-05-22 17:58:23:5823 [31merror[39m: [31mError en put request, reintentando... Request failed with status code 404[39m
+2024-05-22 17:58:26:5826 [31merror[39m: [31mError en put request, reintentando... Request failed with status code 404[39m
+2024-05-22 17:58:28:5828 [31merror[39m: [31mError en put request, reintentando... Request failed with status code 404[39m
+2024-05-22 17:58:29:5829 [31merror[39m: [31mError en put request, reintentando... Request failed with status code 404[39m
+2024-05-22 17:58:52:5852 [31merror[39m: [31mError al actualizar estado de programa Request failed with status code 404[39m
+2024-05-22 17:58:56:5856 [31merror[39m: [31mError al actualizar estado de programa Request failed with status code 404[39m
+2024-05-22 17:58:57:5857 [31merror[39m: [31mError al actualizar estado de programa Request failed with status code 404[39m
+2024-05-22 18:03:52:352 [31merror[39m: [31mError al obtener el programa con id 34[39m
+2024-05-22 18:33:59:3359 [31merror[39m: [31mError al actualizar estado de programa Request failed with status code 404[39m
+2024-05-22 18:34:30:3430 [31merror[39m: [31mError al actualizar estado de una competencia Request failed with status code 404[39m
+2024-05-22 18:34:46:3446 [31merror[39m: [31mError al actualizar estado de una competencia Request failed with status code 404[39m
+2024-05-22 18:39:33:3933 [31merror[39m: [31mError en post request, reintentando... read ECONNRESET[39m
+2024-05-22 18:39:33:3933 [31merror[39m: [31mError en post request, reintentando... socket hang up[39m

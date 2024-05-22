@@ -18,31 +18,7 @@ module.exports = function (injectedController) {
     }
 
     async function insert(data) {
-        // Validación del piso
-        const matchPiso = data.ambiente_ubicacion.match(/Piso\s(\d+)/i);
-        const piso = matchPiso ? parseInt(matchPiso[1], 10) : 0;  // Convertimos el resultado a número para validarlo
-
-        if (piso <= 0) {
-            throw new Error("El piso debe ser mayor que 0 y estar correctamente especificado.");
-        }
-
-        const ambientes = await getAll();
-
-        const ubicacionAbreviatura = data.ambiente_ubicacion.match(/\b(\w{5,})/g).map(word => word[0]).join('').toUpperCase();
-        const ambientesEnMismoPiso = ambientes.filter(ambiente => ambiente.ambiente_id && ambiente.ambiente_id.startsWith(ubicacionAbreviatura + piso.toString()));
-
-        const numeroAmbientesMismoPiso = ambientesEnMismoPiso.length;
-
-        const numeroFormateado = (numeroAmbientesMismoPiso + 1).toString().padStart(2, '0');
-        const ambienteCodigo = `${ubicacionAbreviatura}${piso}${numeroFormateado}`;
-
-        const dataWithCodigo = {
-            ...data,
-            ambiente_id: ambienteCodigo,
-            ambiente_estado: 1
-        };
-
-        return controller.insert(TABLE_NAME, dataWithCodigo);
+        return controller.insert(TABLE_NAME, data);
     }
 
 
