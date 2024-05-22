@@ -12,12 +12,20 @@ function verificarToken(token) {
 }
 
 const chequearToken = {
-    confirmarToken: function (req) {
+    confirmarToken: function (req, roles) {
         const decodificado = decodificarCabecera(req);
 
-        if (decodificado.role !== 'coordinador') {
+        // Verifica si el rol del usuario está en la lista de roles permitidos
+        if (!roles.includes(decodificado.role)) {
             throw new Error('No tienes permisos para realizar esta acción');
         }
+
+        // Todo está correcto, establecer el usuario en el request
+        req.user = {
+            role: decodificado.role,
+            username: decodificado.username,
+            docente_id: decodificado.docente_id
+        };
     }
 };
 
@@ -39,7 +47,11 @@ function decodificarCabecera(req) {
     const token = obtenerToken(autorizacion);
     const decodificado = verificarToken(token);
 
-    req.user = decodificado;
+    req.user = {
+        role: decodificado.role,
+        username: decodificado.username,
+        docente_id: decodificado.docente_id // Esto estará presente solo si el rol es 'docente' de lo contrario será undefined
+    };
 
     return decodificado;
 }

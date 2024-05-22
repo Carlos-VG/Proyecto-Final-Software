@@ -10,8 +10,8 @@ const router = express.Router();
  * @brief Rutas de la entidad docente
  */
 router.get('/', getTodosLosDocentes);
-router.get('/:id', getUnDocente);
-router.post('/', seguridad(), agregarDocente);
+router.get('/perfil', seguridad(['coordinador', 'docente']), getUnDocente);
+router.post('/', seguridad('coordinador'), agregarDocente);
 router.put('/:id', actualizarDocente);
 router.put('/cambiarEstado/:id', cambiarEstadoDocente);
 
@@ -38,10 +38,16 @@ async function getTodosLosDocentes(req, res, next) {
  */
 async function getUnDocente(req, res, next) {
     try {
-        const item = await controlador.getOne(req.params.id);
+        // Obtener el ID del docente directamente del token
+        const idDocente = req.user.docente_id;
+        const item = await controlador.getOne(idDocente);
+        if (!item) {
+            logger.error('Docente no encontrado');
+            return res.status(404).send({ error: 'Docente no encontrado' });
+        }
         respuesta.success(req, res, item, 200);
     } catch (err) {
-        next(err);
+        respuesta.error(req, res, 'Error al procesar la solicitud', 500, err.message);
     }
 }
 
