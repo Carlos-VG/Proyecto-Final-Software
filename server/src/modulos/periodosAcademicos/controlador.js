@@ -3,7 +3,7 @@ const TABLE_NAME = 'tblPeriodo_Academico';
 const TABLE_RELATION = 'tblPeriodo_Programa';
 const auth = require('../auth/controlador');
 const axios = require('axios');
-const jsonServerUrl = 'http://localhost:3000';
+const jsonServerUrl = 'http://localhost:3001';
 
 module.exports = function (injectedController) {
     let controller = injectedController;
@@ -31,31 +31,41 @@ module.exports = function (injectedController) {
     }
 
     async function getOne(id) {
-        return controller.getOne(TABLE_NAME, 'periodo_id', id);
+        const [periodo, programas, relaciones] = await Promise.all([
+            controller.getOne(TABLE_NAME, 'periodo_id', id),
+            axios.get(`${jsonServerUrl}/programas`).then(res => res.data),
+            controller.getAll(TABLE_RELATION)
+        ]);
+
+        const programasMap = Object.fromEntries(programas.map(p => [p.id, p]));
+
+        return {
+            ...periodo,
+            programas: relaciones
+                .filter(r => r.periodo_id === periodo.periodo_id)
+                .map(r => programasMap[r.programa_id])
+                .filter(Boolean)
+        };
     }
 
     async function insert(data) {
-        const dataToInsert = { ...data };
+        const { periodoAcademico, programas } = data;
 
-        if ('id' in dataToInsert) {
-            dataToInsert.docente_id = dataToInsert.id;
-            delete dataToInsert.id;
-            delete dataToInsert.login;
-            delete dataToInsert.password;
-
-        }
-        const docenteResult = await controller.insert(TABLE_NAME, dataToInsert);
-
-        let usuarioData = {
-            usuario: data.login,
-            password: data.password,
-            rol: 'docente',
-            docente_id: docenteResult
+        const periodoData = {
+            periodo_nombre: periodoAcademico.periodo_nombre,
+            fecha_inicio: periodoAcademico.periodo_fecha_inicio,
+            fecha_fin: periodoAcademico.periodo_fecha_fin
         };
+        const periodoId = await controller.insert(TABLE_NAME, periodoData);
 
-        const usuarioResult = await auth(injectedController).insert(usuarioData);
+        const relacionInserts = programas.map(programaId => controller.insert(TABLE_RELATION, {
+            periodo_id: periodoId,
+            programa_id: programaId
+        }));
 
-        return { docenteResult, usuarioResult };
+        await Promise.all(relacionInserts);
+
+        return { periodoId, periodo: periodoData, programas };
     }
 
     async function update(data, id) {

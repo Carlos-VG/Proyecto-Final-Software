@@ -1239,3 +1239,31 @@
 2024-05-22 18:40:04:404 [32minfo[39m: [32mEstado de la competencia con id 31 actualizado[39m
 2024-05-22 18:40:05:405 [32minfo[39m: [32mConexión a la base de datos establecida[39m
 2024-05-22 18:40:05:405 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 19:04:30:430 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 19:04:30:430 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 19:04:40:440 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 19:05:49:549 [35mhttp[39m: [35mSe agregó un ambiente[39m
+2024-05-22 19:06:25:625 [32minfo[39m: [32mProgramas con competencias obtenidos[39m
+2024-05-22 19:06:43:643 [32minfo[39m: [32mPrograma con id 31 obtenido[39m
+2024-05-22 19:07:10:710 [32minfo[39m: [32mEstado de la competencia con id 31 actualizado[39m
+2024-05-22 19:07:11:711 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 19:07:11:711 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 19:15:14:1514 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 19:15:14:1514 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 19:15:52:1552 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 19:16:15:1615 [31merror[39m: [31mError al obtener los Periodos Academicos[39m
+2024-05-22 19:17:08:178 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 19:17:08:178 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 19:17:27:1727 [35mhttp[39m: [35mSe obtuvieron todos los Periodos Academicos[39m
+2024-05-22 19:20:30:2030 [35mhttp[39m: [35mSe obtuvieron todos los Periodos Academicos[39m
+2024-05-22 19:21:13:2113 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 19:21:13:2113 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 19:21:14:2114 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 19:21:14:2114 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 19:21:35:2135 [35mhttp[39m: [35mSe obtuvieron todos los Periodos Academicos[39m
+2024-05-22 19:26:25:2625 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 19:26:25:2625 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 19:36:17:3617 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 19:36:17:3617 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 19:36:30:3630 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 19:36:30:3630 [32minfo[39m: [32mTablas creadas correctamente[39m

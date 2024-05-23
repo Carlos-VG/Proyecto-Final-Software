@@ -101,3 +101,4 @@
 2024-05-22 18:34:46:3446 [31merror[39m: [31mError al actualizar estado de una competencia Request failed with status code 404[39m
 2024-05-22 18:39:33:3933 [31merror[39m: [31mError en post request, reintentando... read ECONNRESET[39m
 2024-05-22 18:39:33:3933 [31merror[39m: [31mError en post request, reintentando... socket hang up[39m
+2024-05-22 19:16:15:1615 [31merror[39m: [31mError al obtener los Periodos Academicos[39m

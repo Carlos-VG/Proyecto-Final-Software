@@ -2,17 +2,18 @@ const express = require('express');
 const respuesta = require('../../red/respuestas');
 const controlador = require('./index');
 const logger = require('../../logger');
+const seguridad = require('../../middleware/seguridad');
 const router = express.Router();
 
 
 /**
  * @brief Rutas de la entidad Periodo Academico
  */
-router.get('/', getTodosLosPeriodosAcademicos);
-router.get('/:id', getUnPeriodoAcademico);
-router.post('/', agregarPeriodoAcademico);
-router.put('/:id', actualizarUnPeriodoAcademico);
-router.delete('/:id', eliminarPeriodoAcademico);
+router.get('/', seguridad('coordinador'), getTodosLosPeriodosAcademicos);
+router.get('/:id', seguridad('coordinador'), getUnPeriodoAcademico);
+router.post('/', seguridad('coordinador'), agregarPeriodoAcademico);
+router.put('/:id', seguridad('coordinador'), actualizarUnPeriodoAcademico);
+router.delete('/:id', seguridad('coordinador'), eliminarPeriodoAcademico);
 
 /**
  * @brief Obtiene todos los periodos academicos
