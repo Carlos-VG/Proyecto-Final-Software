@@ -1267,3 +1267,26 @@
 2024-05-22 19:36:17:3617 [32minfo[39m: [32mTablas creadas correctamente[39m
 2024-05-22 19:36:30:3630 [32minfo[39m: [32mConexión a la base de datos establecida[39m
 2024-05-22 19:36:30:3630 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 22:47:55:4755 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 22:47:55:4755 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 22:49:49:4949 [31merror[39m: [31mError al autenticar usuario[39m
+2024-05-22 22:49:52:4952 [31merror[39m: [31mError al autenticar usuario[39m
+2024-05-22 22:49:53:4953 [31merror[39m: [31mError al autenticar usuario[39m
+2024-05-22 22:49:53:4953 [31merror[39m: [31mError al autenticar usuario[39m
+2024-05-22 22:49:55:4955 [31merror[39m: [31mError al autenticar usuario[39m
+2024-05-22 22:49:57:4957 [31merror[39m: [31mError al autenticar usuario[39m
+2024-05-22 22:49:58:4958 [31merror[39m: [31mError al autenticar usuario[39m
+2024-05-22 22:49:59:4959 [31merror[39m: [31mError al autenticar usuario[39m
+2024-05-22 22:49:59:4959 [31merror[39m: [31mError al autenticar usuario[39m
+2024-05-22 22:49:59:4959 [31merror[39m: [31mError al autenticar usuario[39m
+2024-05-22 22:49:59:4959 [31merror[39m: [31mError al autenticar usuario[39m
+2024-05-22 22:50:00:500 [31merror[39m: [31mError al autenticar usuario[39m
+2024-05-22 22:50:00:500 [31merror[39m: [31mError al autenticar usuario[39m
+2024-05-22 22:50:01:501 [31merror[39m: [31mError al autenticar usuario[39m
+2024-05-22 22:50:26:5026 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-22 22:50:26:5026 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-22 22:50:28:5028 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 22:50:33:5033 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 22:50:36:5036 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 22:55:47:5547 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-22 22:56:21:5621 [32minfo[39m: [32mUsuario autenticado correctamente[39m

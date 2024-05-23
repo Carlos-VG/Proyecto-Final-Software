@@ -1,4 +1,4 @@
-const TABLE_NAME = 'tblusuario';
+const TABLE_NAME = 'tblUsuario';
 const bcrypt = require('bcrypt');
 const auth = require('../../../auth');
 const logger = require('../../logger');
