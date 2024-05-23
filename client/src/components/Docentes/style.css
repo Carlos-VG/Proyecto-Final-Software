@@ -1,0 +1,156 @@
+/* style.css */
+
+body {
+    background-color: #343a40;
+    color: white;
+  }
+  
+  .container-fluid {
+    height: 100vh;
+  }
+  
+  .top-bar {
+    background-color: #007bff;
+    height: 50px; /* Incrementa la altura de la barra superior */
+  }
+  
+  .row.no-gutters {
+    height: calc(100% - 60px); /* Ajusta este valor según la altura de tu top bar */
+  }
+  
+  .sidebar {
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .main-content {
+    background-color: #ffffff;
+    padding: 20px;
+    height: 100%;
+    overflow-y: auto;
+  }
+  
+  .user-icon {
+    display: inline-block;
+    font-size: 3rem; /* Tamaño del icono */
+  }
+  
+  .module {
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .table {
+    background-color: #495057;
+  }
+  
+  .table thead th {
+    background-color: #6c757d;
+    color: white;
+  }
+  
+  .table tbody tr:hover {
+    background-color: #5a6268;
+  }
+  
+  .user-name, .user-role {
+    font-size: 1.2rem;
+  }
+  
+  /* Media queries para texto responsive */
+  @media (max-width: 1200px) {
+    .user-name, .user-role {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .user-name, .user-role {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .user-name, .user-role {
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .user-name, .user-role {
+      font-size: 0.7rem;
+    }
+  }
+  
+/* style.css */
+:root {
+    --primary: #007bff; /* Define aquí tu color primario */
+    --danger: #dc3545; /* Define aquí tu color de peligro (rojo) */
+  }
+  
+  .custom-button {
+    padding: 17px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: var(--primary); /* Usa el color primario */
+    color: white; /* Asegúrate de que el texto sea visible */
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all 0.5s ease;
+  }
+  
+  .custom-button:hover {
+    letter-spacing: 3px;
+    background-color: var(--primary); /* Usa el color primario */
+    color: white; /* Asegúrate de que el texto sea visible */
+    box-shadow: var(--primary) 0px 7px 29px 0px;
+  }
+  
+  .custom-button:active {
+    letter-spacing: 3px;
+    background-color: var(--primary); /* Usa el color primario */
+    color: white; /* Asegúrate de que el texto sea visible */
+    box-shadow: var(--primary) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+  }
+  
+  .danger-button {
+    padding: 17px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: var(--danger); /* Usa el color de peligro */
+    color: white; /* Asegúrate de que el texto sea visible */
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all 0.5s ease;
+  }
+  
+  .danger-button:hover {
+    letter-spacing: 3px;
+    background-color: var(--danger); /* Usa el color de peligro */
+    color: white; /* Asegúrate de que el texto sea visible */
+    box-shadow: var(--danger) 0px 7px 29px 0px;
+  }
+  
+  .danger-button:active {
+    letter-spacing: 3px;
+    background-color: var(--danger); /* Usa el color de peligro */
+    color: white; /* Asegúrate de que el texto sea visible */
+    box-shadow: var(--danger) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+  }
+  
+  
+  
+  
+  
+  

@@ -131,15 +131,19 @@ html {
 
 .button {
     display: block;
-    width: 250px;
-    padding: 10px;
+    padding: 1px 100px;
+    width: 100%;
     background-color: #2171cc;
     color: #fff;
     text-align: center;
     text-decoration: none;
-    border-radius: 5px;
-    margin: 20px 0;
+    border-radius: 8px;
+    margin-bottom: 10px;
     cursor: pointer;
+    box-sizing: border-box; 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip; 
 }
 
 .button:hover,
@@ -202,4 +206,5 @@ html {
     .table {
         max-width: 100%;
     }
+
 }
