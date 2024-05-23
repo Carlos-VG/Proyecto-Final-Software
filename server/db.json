@@ -1,0 +1,923 @@
+{
+  "programas": [
+    {
+      "id": 1,
+      "programa_nombre": "Ingeniería de Sistemas",
+      "programa_estado": 1
+    },
+    {
+      "id": 2,
+      "programa_nombre": "Administración de Empresas",
+      "programa_estado": 1
+    },
+    {
+      "id": 3,
+      "programa_nombre": "Psicología",
+      "programa_estado": 1
+    },
+    {
+      "id": 4,
+      "programa_nombre": "Derecho",
+      "programa_estado": 1
+    },
+    {
+      "id": 5,
+      "programa_nombre": "Medicina",
+      "programa_estado": 1
+    },
+    {
+      "id": 6,
+      "programa_nombre": "Biología",
+      "programa_estado": 1
+    },
+    {
+      "id": 7,
+      "programa_nombre": "Arquitectura",
+      "programa_estado": 1
+    },
+    {
+      "id": 8,
+      "programa_nombre": "Ingeniería Civil",
+      "programa_estado": 1
+    },
+    {
+      "id": 9,
+      "programa_nombre": "Ingeniería Electrónica",
+      "programa_estado": 1
+    },
+    {
+      "id": 10,
+      "programa_nombre": "Ingeniería Ambiental",
+      "programa_estado": 1
+    },
+    {
+      "id": 11,
+      "programa_nombre": "Artes Plásticas",
+      "programa_estado": 1
+    },
+    {
+      "id": 12,
+      "programa_nombre": "Música",
+      "programa_estado": 1
+    },
+    {
+      "id": 13,
+      "programa_nombre": "Historia",
+      "programa_estado": 1
+    },
+    {
+      "id": 14,
+      "programa_nombre": "Literatura",
+      "programa_estado": 1
+    },
+    {
+      "id": 15,
+      "programa_nombre": "Filosofía",
+      "programa_estado": 1
+    },
+    {
+      "id": 16,
+      "programa_nombre": "Educación Física",
+      "programa_estado": 1
+    },
+    {
+      "id": 17,
+      "programa_nombre": "Nutrición y Dietética",
+      "programa_estado": 1
+    },
+    {
+      "id": 18,
+      "programa_nombre": "Química",
+      "programa_estado": 1
+    },
+    {
+      "id": 19,
+      "programa_nombre": "Física",
+      "programa_estado": 1
+    },
+    {
+      "id": 20,
+      "programa_nombre": "Matemáticas",
+      "programa_estado": 1
+    },
+    {
+      "id": 21,
+      "programa_nombre": "Veterinaria",
+      "programa_estado": 1
+    },
+    {
+      "id": 22,
+      "programa_nombre": "Ingeniería Química",
+      "programa_estado": 1
+    },
+    {
+      "id": 23,
+      "programa_nombre": "Ingeniería de Telecomunicaciones",
+      "programa_estado": 1
+    },
+    {
+      "id": 24,
+      "programa_nombre": "Ingeniería Mecánica",
+      "programa_estado": 1
+    },
+    {
+      "id": 25,
+      "programa_nombre": "Marketing",
+      "programa_estado": 1
+    },
+    {
+      "id": 26,
+      "programa_nombre": "Periodismo",
+      "programa_estado": 1
+    },
+    {
+      "id": 27,
+      "programa_nombre": "Antropología",
+      "programa_estado": 1
+    },
+    {
+      "id": 28,
+      "programa_nombre": "Sociología",
+      "programa_estado": 1
+    },
+    {
+      "id": 29,
+      "programa_nombre": "Trabajo Social",
+      "programa_estado": 1
+    },
+    {
+      "id": 30,
+      "programa_nombre": "Turismo y Hotelería",
+      "programa_estado": 1
+    },
+    {
+      "programa_nombre": "Prueba hola",
+      "programa_estado": 1,
+      "id": 31
+    }
+  ],
+  "competencias": [
+    {
+      "id": 1,
+      "competencia_nombre": "Análisis de Sistemas",
+      "competencia_tipo": "Especifica",
+      "competencia_estado": 1
+    },
+    {
+      "id": 2,
+      "competencia_nombre": "Gestión de Proyectos",
+      "competencia_tipo": "Especifica",
+      "competencia_estado": 1
+    },
+    {
+      "id": 3,
+      "competencia_nombre": "Derecho Constitucional",
+      "competencia_tipo": "Especifica",
+      "competencia_estado": 1
+    },
+    {
+      "id": 4,
+      "competencia_nombre": "Neurociencias",
+      "competencia_tipo": "Especifica",
+      "competencia_estado": 1
+    },
+    {
+      "id": 5,
+      "competencia_nombre": "Diseño Arquitectónico",
+      "competencia_tipo": "Especifica",
+      "competencia_estado": 1
+    },
+    {
+      "id": 6,
+      "competencia_nombre": "Dinámica Estructural",
+      "competencia_tipo": "Especifica",
+      "competencia_estado": 1
+    },
+    {
+      "id": 7,
+      "competencia_nombre": "Electrónica Analógica",
+      "competencia_tipo": "Especifica",
+      "competencia_estado": 1
+    },
+    {
+      "id": 8,
+      "competencia_nombre": "Gestión Ambiental",
+      "competencia_tipo": "Especifica",
+      "competencia_estado": 1
+    },
+    {
+      "id": 9,
+      "competencia_nombre": "Escultura",
+      "competencia_tipo": "Especifica",
+      "competencia_estado": 1
+    },
+    {
+      "id": 10,
+      "competencia_nombre": "Composición Musical",
+      "competencia_tipo": "Especifica",
+      "competencia_estado": 1
+    },
+    {
+      "id": 11,
+      "competencia_nombre": "Teoría Económica",
+      "competencia_tipo": "Especifica",
+      "competencia_estado": 1
+    },
+    {
+      "id": 12,
+      "competencia_nombre": "Microbiología Clínica",
+      "competencia_tipo": "Especifica",
+      "competencia_estado": 1
+    },
+    {
+      "id": 13,
+      "competencia_nombre": "Genética Humana",
+      "competencia_tipo": "Especifica",
+      "competencia_estado": 1
+    },
+    {
+      "id": 14,
+      "competencia_nombre": "Mecánica de Fluidos",
+      "competencia_tipo": "Especifica",
+      "competencia_estado": 1
+    },
+    {
+      "id": 15,
+      "competencia_nombre": "Control de Procesos",
+      "competencia_tipo": "Especifica",
+      "competencia_estado": 1
+    },
+    {
+      "id": 16,
+      "competencia_nombre": "Circuitos Integrados",
+      "competencia_tipo": "Especifica",
+      "competencia_estado": 1
+    },
+    {
+      "id": 17,
+      "competencia_nombre": "Teorías del Aprendizaje",
+      "competencia_tipo": "Especifica",
+      "competencia_estado": 1
+    },
+    {
+      "id": 18,
+      "competencia_nombre": "Psicología del Desarrollo",
+      "competencia_tipo": "Especifica",
+      "competencia_estado": 1
+    },
+    {
+      "id": 19,
+      "competencia_nombre": "Derecho Internacional",
+      "competencia_tipo": "Especifica",
+      "competencia_estado": 1
+    },
+    {
+      "id": 20,
+      "competencia_nombre": "Cirugía General",
+      "competencia_tipo": "Especifica",
+      "competencia_estado": 1
+    },
+    {
+      "id": 21,
+      "competencia_nombre": "Endocrinología",
+      "competencia_tipo": "Especifica",
+      "competencia_estado": 1
+    },
+    {
+      "id": 22,
+      "competencia_nombre": "Historia Contemporánea",
+      "competencia_tipo": "Especifica",
+      "competencia_estado": 1
+    },
+    {
+      "id": 23,
+      "competencia_nombre": "Lingüística Aplicada",
+      "competencia_tipo": "Especifica",
+      "competencia_estado": 1
+    },
+    {
+      "id": 24,
+      "competencia_nombre": "Filosofía de la Ciencia",
+      "competencia_tipo": "Especifica",
+      "competencia_estado": 1
+    },
+    {
+      "id": 25,
+      "competencia_nombre": "Biología Molecular",
+      "competencia_tipo": "Especifica",
+      "competencia_estado": 1
+    },
+    {
+      "id": 26,
+      "competencia_nombre": "Robótica",
+      "competencia_tipo": "Especifica",
+      "competencia_estado": 1
+    },
+    {
+      "id": 27,
+      "competencia_nombre": "Inteligencia Artificial",
+      "competencia_tipo": "Especifica",
+      "competencia_estado": 1
+    },
+    {
+      "id": 28,
+      "competencia_nombre": "Diseño de Modas",
+      "competencia_tipo": "Especifica",
+      "competencia_estado": 1
+    },
+    {
+      "id": 29,
+      "competencia_nombre": "Artes Visuales",
+      "competencia_tipo": "Especifica",
+      "competencia_estado": 1
+    },
+    {
+      "id": 30,
+      "competencia_nombre": "Fotografía Digital",
+      "competencia_tipo": "Especifica",
+      "competencia_estado": 1
+    },
+    {
+      "id": 31,
+      "competencia_nombre": "Comunicación Efectiva",
+      "competencia_tipo": "Genérica",
+      "competencia_estado": 1
+    },
+    {
+      "id": 32,
+      "competencia_nombre": "Trabajo en Equipo",
+      "competencia_tipo": "Genérica",
+      "competencia_estado": 1
+    },
+    {
+      "id": 33,
+      "competencia_nombre": "Liderazgo",
+      "competencia_tipo": "Genérica",
+      "competencia_estado": 1
+    },
+    {
+      "id": 34,
+      "competencia_nombre": "Pensamiento Crítico",
+      "competencia_tipo": "Genérica",
+      "competencia_estado": 1
+    },
+    {
+      "id": 35,
+      "competencia_nombre": "Resolución de Problemas",
+      "competencia_tipo": "Genérica",
+      "competencia_estado": 1
+    },
+    {
+      "id": 36,
+      "competencia_nombre": "Gestión del Tiempo",
+      "competencia_tipo": "Genérica",
+      "competencia_estado": 1
+    },
+    {
+      "id": 37,
+      "competencia_nombre": "Adaptabilidad",
+      "competencia_tipo": "Genérica",
+      "competencia_estado": 1
+    },
+    {
+      "id": 38,
+      "competencia_nombre": "Innovación y Creatividad",
+      "competencia_tipo": "Genérica",
+      "competencia_estado": 1
+    },
+    {
+      "id": 39,
+      "competencia_nombre": "Ética Profesional",
+      "competencia_tipo": "Genérica",
+      "competencia_estado": 1
+    },
+    {
+      "id": 40,
+      "competencia_nombre": "Gestión del Estrés",
+      "competencia_tipo": "Genérica",
+      "competencia_estado": 1
+    },
+    {
+      "id": 41,
+      "competencia_nombre": "Negociación",
+      "competencia_tipo": "Genérica",
+      "competencia_estado": 1
+    },
+    {
+      "id": 42,
+      "competencia_nombre": "Empatía",
+      "competencia_tipo": "Genérica",
+      "competencia_estado": 1
+    },
+    {
+      "id": 43,
+      "competencia_nombre": "Orientación al Cliente",
+      "competencia_tipo": "Genérica",
+      "competencia_estado": 1
+    },
+    {
+      "id": 44,
+      "competencia_nombre": "Toma de Decisiones",
+      "competencia_tipo": "Genérica",
+      "competencia_estado": 1
+    },
+    {
+      "id": 45,
+      "competencia_nombre": "Planificación Estratégica",
+      "competencia_tipo": "Genérica",
+      "competencia_estado": 1
+    },
+    {
+      "id": 46,
+      "competencia_nombre": "Motivación de Equipos",
+      "competencia_tipo": "Genérica",
+      "competencia_estado": 1
+    },
+    {
+      "id": 47,
+      "competencia_nombre": "Conciencia Cultural",
+      "competencia_tipo": "Genérica",
+      "competencia_estado": 1
+    },
+    {
+      "id": 48,
+      "competencia_nombre": "Manejo de Conflictos",
+      "competencia_tipo": "Genérica",
+      "competencia_estado": 1
+    },
+    {
+      "id": 49,
+      "competencia_nombre": "Aprendizaje Continuo",
+      "competencia_tipo": "Genérica",
+      "competencia_estado": 1
+    },
+    {
+      "id": 50,
+      "competencia_nombre": "Sostenibilidad",
+      "competencia_tipo": "Genérica",
+      "competencia_estado": 1
+    }
+  ],
+  "programasCompetencias": [
+    {
+      "id": 1,
+      "programa_id": 1,
+      "competencia_id": 1
+    },
+    {
+      "id": 2,
+      "programa_id": 1,
+      "competencia_id": 2
+    },
+    {
+      "id": 3,
+      "programa_id": 1,
+      "competencia_id": 26
+    },
+    {
+      "id": 4,
+      "programa_id": 2,
+      "competencia_id": 31
+    },
+    {
+      "id": 5,
+      "programa_id": 2,
+      "competencia_id": 32
+    },
+    {
+      "id": 6,
+      "programa_id": 2,
+      "competencia_id": 39
+    },
+    {
+      "id": 7,
+      "programa_id": 3,
+      "competencia_id": 18
+    },
+    {
+      "id": 8,
+      "programa_id": 3,
+      "competencia_id": 34
+    },
+    {
+      "id": 9,
+      "programa_id": 3,
+      "competencia_id": 42
+    },
+    {
+      "id": 10,
+      "programa_id": 4,
+      "competencia_id": 3
+    },
+    {
+      "id": 11,
+      "programa_id": 4,
+      "competencia_id": 19
+    },
+    {
+      "id": 12,
+      "programa_id": 4,
+      "competencia_id": 44
+    },
+    {
+      "id": 13,
+      "programa_id": 5,
+      "competencia_id": 4
+    },
+    {
+      "id": 14,
+      "programa_id": 5,
+      "competencia_id": 20
+    },
+    {
+      "id": 15,
+      "programa_id": 5,
+      "competencia_id": 21
+    },
+    {
+      "id": 16,
+      "programa_id": 6,
+      "competencia_id": 6
+    },
+    {
+      "id": 17,
+      "programa_id": 6,
+      "competencia_id": 25
+    },
+    {
+      "id": 18,
+      "programa_id": 6,
+      "competencia_id": 14
+    },
+    {
+      "id": 19,
+      "programa_id": 7,
+      "competencia_id": 5
+    },
+    {
+      "id": 20,
+      "programa_id": 7,
+      "competencia_id": 9
+    },
+    {
+      "id": 21,
+      "programa_id": 7,
+      "competencia_id": 29
+    },
+    {
+      "id": 22,
+      "programa_id": 8,
+      "competencia_id": 8
+    },
+    {
+      "id": 23,
+      "programa_id": 8,
+      "competencia_id": 15
+    },
+    {
+      "id": 24,
+      "programa_id": 8,
+      "competencia_id": 16
+    },
+    {
+      "id": 25,
+      "programa_id": 9,
+      "competencia_id": 7
+    },
+    {
+      "id": 26,
+      "programa_id": 9,
+      "competencia_id": 27
+    },
+    {
+      "id": 27,
+      "programa_id": 9,
+      "competencia_id": 13
+    },
+    {
+      "id": 28,
+      "programa_id": 10,
+      "competencia_id": 8
+    },
+    {
+      "id": 29,
+      "programa_id": 10,
+      "competencia_id": 38
+    },
+    {
+      "id": 30,
+      "programa_id": 10,
+      "competencia_id": 50
+    },
+    {
+      "id": 31,
+      "programa_id": 11,
+      "competencia_id": 9
+    },
+    {
+      "id": 32,
+      "programa_id": 11,
+      "competencia_id": 10
+    },
+    {
+      "id": 33,
+      "programa_id": 11,
+      "competencia_id": 30
+    },
+    {
+      "id": 34,
+      "programa_id": 12,
+      "competencia_id": 10
+    },
+    {
+      "id": 35,
+      "programa_id": 12,
+      "competencia_id": 11
+    },
+    {
+      "id": 36,
+      "programa_id": 12,
+      "competencia_id": 12
+    },
+    {
+      "id": 37,
+      "programa_id": 13,
+      "competencia_id": 22
+    },
+    {
+      "id": 38,
+      "programa_id": 13,
+      "competencia_id": 23
+    },
+    {
+      "id": 39,
+      "programa_id": 13,
+      "competencia_id": 24
+    },
+    {
+      "id": 40,
+      "programa_id": 14,
+      "competencia_id": 24
+    },
+    {
+      "id": 41,
+      "programa_id": 14,
+      "competencia_id": 14
+    },
+    {
+      "id": 42,
+      "programa_id": 14,
+      "competencia_id": 23
+    },
+    {
+      "id": 43,
+      "programa_id": 15,
+      "competencia_id": 24
+    },
+    {
+      "id": 44,
+      "programa_id": 15,
+      "competencia_id": 37
+    },
+    {
+      "id": 45,
+      "programa_id": 15,
+      "competencia_id": 47
+    },
+    {
+      "id": 46,
+      "programa_id": 16,
+      "competencia_id": 35
+    },
+    {
+      "id": 47,
+      "programa_id": 16,
+      "competencia_id": 36
+    },
+    {
+      "id": 48,
+      "programa_id": 16,
+      "competencia_id": 46
+    },
+    {
+      "id": 49,
+      "programa_id": 17,
+      "competencia_id": 21
+    },
+    {
+      "id": 50,
+      "programa_id": 17,
+      "competencia_id": 37
+    },
+    {
+      "id": 51,
+      "programa_id": 17,
+      "competencia_id": 41
+    },
+    {
+      "id": 52,
+      "programa_id": 18,
+      "competencia_id": 14
+    },
+    {
+      "id": 53,
+      "programa_id": 18,
+      "competencia_id": 18
+    },
+    {
+      "id": 54,
+      "programa_id": 18,
+      "competencia_id": 19
+    },
+    {
+      "id": 55,
+      "programa_id": 19,
+      "competencia_id": 15
+    },
+    {
+      "id": 56,
+      "programa_id": 19,
+      "competencia_id": 16
+    },
+    {
+      "id": 57,
+      "programa_id": 19,
+      "competencia_id": 17
+    },
+    {
+      "id": 58,
+      "programa_id": 20,
+      "competencia_id": 20
+    },
+    {
+      "id": 59,
+      "programa_id": 20,
+      "competencia_id": 35
+    },
+    {
+      "id": 60,
+      "programa_id": 20,
+      "competencia_id": 50
+    },
+    {
+      "id": 61,
+      "programa_id": 21,
+      "competencia_id": 21
+    },
+    {
+      "id": 62,
+      "programa_id": 21,
+      "competencia_id": 25
+    },
+    {
+      "id": 63,
+      "programa_id": 21,
+      "competencia_id": 26
+    },
+    {
+      "id": 64,
+      "programa_id": 22,
+      "competencia_id": 15
+    },
+    {
+      "id": 65,
+      "programa_id": 22,
+      "competencia_id": 16
+    },
+    {
+      "id": 66,
+      "programa_id": 22,
+      "competencia_id": 17
+    },
+    {
+      "id": 67,
+      "programa_id": 23,
+      "competencia_id": 27
+    },
+    {
+      "id": 68,
+      "programa_id": 23,
+      "competencia_id": 28
+    },
+    {
+      "id": 69,
+      "programa_id": 23,
+      "competencia_id": 7
+    },
+    {
+      "id": 70,
+      "programa_id": 24,
+      "competencia_id": 16
+    },
+    {
+      "id": 71,
+      "programa_id": 24,
+      "competencia_id": 26
+    },
+    {
+      "id": 72,
+      "programa_id": 24,
+      "competencia_id": 27
+    },
+    {
+      "id": 73,
+      "programa_id": 25,
+      "competencia_id": 32
+    },
+    {
+      "id": 74,
+      "programa_id": 25,
+      "competencia_id": 38
+    },
+    {
+      "id": 75,
+      "programa_id": 25,
+      "competencia_id": 39
+    },
+    {
+      "id": 76,
+      "programa_id": 26,
+      "competencia_id": 42
+    },
+    {
+      "id": 77,
+      "programa_id": 26,
+      "competencia_id": 44
+    },
+    {
+      "id": 78,
+      "programa_id": 26,
+      "competencia_id": 43
+    },
+    {
+      "id": 79,
+      "programa_id": 27,
+      "competencia_id": 47
+    },
+    {
+      "id": 80,
+      "programa_id": 27,
+      "competencia_id": 48
+    },
+    {
+      "id": 81,
+      "programa_id": 27,
+      "competencia_id": 49
+    },
+    {
+      "id": 82,
+      "programa_id": 28,
+      "competencia_id": 28
+    },
+    {
+      "id": 83,
+      "programa_id": 28,
+      "competencia_id": 29
+    },
+    {
+      "id": 84,
+      "programa_id": 28,
+      "competencia_id": 47
+    },
+    {
+      "id": 85,
+      "programa_id": 29,
+      "competencia_id": 48
+    },
+    {
+      "id": 86,
+      "programa_id": 29,
+      "competencia_id": 49
+    },
+    {
+      "id": 87,
+      "programa_id": 29,
+      "competencia_id": 50
+    },
+    {
+      "id": 88,
+      "programa_id": 30,
+      "competencia_id": 45
+    },
+    {
+      "id": 89,
+      "programa_id": 30,
+      "competencia_id": 46
+    },
+    {
+      "id": 90,
+      "programa_id": 30,
+      "competencia_id": 50
+    },
+    {
+      "programa_id": 31,
+      "competencia_id": 23,
+      "id": 91
+    },
+    {
+      "programa_id": 31,
+      "competencia_id": 49,
+      "id": 92
+    }
+  ]
+}
