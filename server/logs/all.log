@@ -1484,3 +1484,8 @@
 2024-05-22 22:55:47:5547 [32minfo[39m: [32mUsuario autenticado correctamente[39m
 2024-05-22 22:56:21:5621 [32minfo[39m: [32mUsuario autenticado correctamente[39m
 >>>>>>> 71a0c0bc16c680b351c0e7a71118744296c420ad
+2024-05-23 01:01:12:112 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-23 01:01:12:112 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-23 01:01:29:129 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-23 01:02:25:225 [35mhttp[39m: [35mSe obtuvieron todos los Periodos Academicos[39m
+2024-05-23 01:02:52:252 [35mhttp[39m: [35mSe obtuvieron todos los docentes[39m
