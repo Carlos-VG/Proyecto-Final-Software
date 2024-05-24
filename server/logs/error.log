@@ -180,3 +180,5 @@
 2024-05-23 18:13:32:1332 [31merror[39m: [31mDocente no encontrado[39m
 2024-05-23 18:43:12:4312 [31merror[39m: [31mError al conectar a la base de datos: connection is not defined[39m
 2024-05-23 18:58:28:5828 [31merror[39m: [31mError creando tablas: Incorrect table definition; there can be only one auto column and it must be defined as a key[39m
+2024-05-23 21:39:28:3928 [31merror[39m: [31mError al agregar el Periodo Academico[39m
+2024-05-23 21:46:41:4641 [31merror[39m: [31mError al autenticar usuario[39m

@@ -62,6 +62,56 @@ async function executeQuery(query) {
     }
 }
 
+async function executeQueryJSON(query) {
+    try {
+        const db = await dbConnection.getConnection();
+        const result = await db.sql(query).execute();
+        const columns = result.getColumns();
+        const rows = result.fetchAll();
+
+        return rows.map(row => {
+            let obj = {};
+            columns.forEach((col, index) => {
+                obj[col.getColumnLabel()] = row[index];
+            });
+            return obj;
+        });
+    } catch (err) {
+        console.error('Error executing query:', err);
+        throw err;
+    }
+}
+
+async function iniciarTransaccion() {
+    try {
+        const db = await dbConnection.getConnection();
+        await db.startTransaction();
+    } catch (err) {
+        console.error('Error starting transaction:', err);
+        throw err;
+    }
+}
+
+async function commitTransaccion() {
+    try {
+        const db = await dbConnection.getConnection();
+        await db.commit();
+    } catch (err) {
+        console.error('Error committing transaction:', err);
+        throw err;
+    }
+}
+
+async function rollbackTransaccion() {
+    try {
+        const db = await dbConnection.getConnection();
+        await db.rollback();
+    } catch (err) {
+        console.error('Error rolling back transaction:', err);
+        throw err;
+    }
+}
+
 module.exports = {
     getAll,
     getOne,
@@ -69,4 +119,8 @@ module.exports = {
     update,
     remove,
     executeQuery,
+    executeQueryJSON,
+    iniciarTransaccion,
+    commitTransaccion,
+    rollbackTransaccion,
 };

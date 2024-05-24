@@ -3,6 +3,7 @@ const respuesta = require('../../red/respuestas');
 const controlador = require('./index');
 const logger = require('../../logger');
 const seguridad = require('../../middleware/seguridad');
+const validarHorario = require('../../middleware/validarHorario');
 const router = express.Router();
 
 
@@ -10,9 +11,9 @@ const router = express.Router();
  * @brief Rutas de la entidad horario
  */
 router.get('/', seguridad('coordinador'), getTodosLosHorarios);
-router.get('/unDocente/:id?', seguridad(['coordinador', 'docente']), getUnHorario);
-router.post('/', seguridad('coordinador'), agregarHorario);
-router.put('/actualizar/:id', seguridad('coordinador'), actualizarHorario);
+router.get('/unHorario/:id?', seguridad(['coordinador', 'docente']), getUnHorario);
+router.post('/', seguridad('coordinador'), validarHorario);
+router.put('/actualizar/:id', seguridad('coordinador'), validarHorario);
 router.delete('/:id', seguridad('coordinador'), eliminarHorario);
 
 /**
@@ -47,8 +48,8 @@ async function getUnHorario(req, res, next) {
         }
         const item = await controlador.getOne(idDocente);
         if (!item) {
-            logger.error('Docente no encontrado');
-            return res.status(404).send({ error: 'Docente no encontrado' });
+            logger.error('Horario no encontrado');
+            return res.status(404).send({ error: 'Horario no encontrado' });
         }
         respuesta.success(req, res, item, 200);
     } catch (err) {
@@ -65,7 +66,7 @@ async function getUnHorario(req, res, next) {
 async function agregarHorario(req, res, next) {
     try {
         const item = await controlador.insert(req.body);
-        respuesta.success(req, res, 'Docente agregado satisfactoriamente', 201);
+        respuesta.success(req, res, 'Horario agregado satisfactoriamente', 201);
         logger
     } catch (err) {
         next(err);
@@ -82,7 +83,7 @@ async function agregarHorario(req, res, next) {
 async function actualizarHorario(req, res, next) {
     try {
         const item = await controlador.update(req.body, req.params.id);
-        respuesta.success(req, res, 'Docente actualizado satisfactoriamente', 200);
+        respuesta.success(req, res, 'Horario actualizado satisfactoriamente', 200);
     } catch (err) {
         next(err);
     }
