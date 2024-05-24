@@ -1,3 +1,4 @@
+/* ModalWindow.css */
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -32,9 +33,40 @@
 }
 
 .modal-buttons {
-    display: flex; 
+    display: flex;
     justify-content: center;
-    flex-direction: row ; 
+    flex-direction: row;
     gap: 10px;
 }
 
+.modal-row {
+    margin-bottom: 15px;
+}
+
+.modal-row label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.modal-row input,
+.modal-row select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.modal {
+    /* Otros estilos existentes */
+    z-index: 1000; /* Asegura que el modal aparezca sobre todo el contenido */
+}
+
+.modal-buttons-2x2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.button {
+    /* Otros estilos existentes */
+    width: 100%; /* Asegura que los botones ocupen el espacio disponible */
+}

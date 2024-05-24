@@ -182,3 +182,6 @@
 2024-05-23 18:58:28:5828 [31merror[39m: [31mError creando tablas: Incorrect table definition; there can be only one auto column and it must be defined as a key[39m
 2024-05-23 21:39:28:3928 [31merror[39m: [31mError al agregar el Periodo Academico[39m
 2024-05-23 21:46:41:4641 [31merror[39m: [31mError al autenticar usuario[39m
+2024-05-24 02:17:04:174 [31merror[39m: [31mError al autenticar usuario[39m
+2024-05-24 04:18:03:183 [31merror[39m: [31mError, estado de periodo academico actualizado insatisfactoriamente[39m
+2024-05-24 04:20:31:2031 [31merror[39m: [31mError, estado de periodo academico actualizado insatisfactoriamente[39m

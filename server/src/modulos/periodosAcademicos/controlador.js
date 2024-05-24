@@ -111,6 +111,7 @@ module.exports = function (injectedController) {
             ...obtenerPeriodoAcademico,
             periodo_estado: nuevoEstado,
         };
+        delete dataToUpdate.programas // borrar la columna programas
         //retornar el docente con el nuevo estado
         return await controller.update(TABLE_NAME, 'periodo_id', dataToUpdate, id);
     }

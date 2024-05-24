@@ -1,7 +1,7 @@
 /* style.css */
 
 body {
-    background-color: #343a40;
+    background-color: #ffffff;
     color: white;
   }
   
@@ -15,32 +15,29 @@ body {
   }
   
   .row.no-gutters {
-    height: calc(100% - 60px); /* Ajusta este valor según la altura de tu top bar */
+    height: calc(100% - 50px); /* Ajusta este valor según la altura de tu top bar */
   }
-  
-  .sidebar {
-    height: 100%;
-    padding: 20px;
-    box-sizing: border-box;
+  .barra{
+    background-color: #ffffffef;
   }
-  
   .main-content {
     background-color: #ffffff;
-    padding: 20px;
     height: 100%;
     overflow-y: auto;
   }
   
   .user-icon {
     display: inline-block;
-    font-size: 3rem; /* Tamaño del icono */
+    font-size: 3rem;
   }
   
   .module {
     cursor: pointer;
     width: 100%;
   }
-  
+  .barra{
+    background-color: #ffffffef;
+  }
   .table {
     background-color: #495057;
   }
@@ -58,7 +55,6 @@ body {
     font-size: 1.2rem;
   }
   
-  /* Media queries para texto responsive */
   @media (max-width: 1200px) {
     .user-name, .user-role {
       font-size: 1rem;

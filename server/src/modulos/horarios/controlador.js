@@ -42,29 +42,45 @@ module.exports = function (injectedController) {
         return await controller.getOne('tblDocente', 'docente_id', id);
     }
 
-    async function getHorariosByDocente(docente_id) {
-        const query = `SELECT * FROM tblHorario WHERE docente_id = ${docente_id}`;
-        const result = await controller.executeQueryJSON(query);
-        return result || [];
-    }
-
     async function getHorariosByDocenteYPeriodo(docente_id, periodo_id) {
         const query = `SELECT * FROM tblHorario WHERE docente_id = ${docente_id} AND periodo_id = ${periodo_id}`;
         const result = await controller.executeQueryJSON(query);
         return result || [];
     }
 
-    async function verificarDisponibilidadAmbiente(ambiente_id, dia, horaInicio, horaFin, periodo_id) {
+    async function verificarDisponibilidadAmbiente(ambiente_id, dia, horaInicio, horaFin, periodo_id, horario_id) {
+        let query = `
+        SELECT COUNT(*) AS count
+        FROM tblHorario
+        WHERE ambiente_id = '${ambiente_id}' 
+        AND horario_dia = '${dia}' 
+        AND horario_hora_inicio < '${horaFin}' 
+        AND horario_hora_fin > '${horaInicio}'
+        AND periodo_id = ${periodo_id}
+    `;
+
+        // Añade la condición para excluir el horario_id actual si existe
+        if (horario_id) {
+            query += ` AND horario_id != ${horario_id}`;
+        }
+
+        const result = await controller.executeQueryJSON(query);
+        return result[0].count === 0;
+    }
+
+    async function verificarHorarioCruzado(docente_id, dia, horaInicio, horaFin, periodo_id) {
         const query = `
             SELECT * 
             FROM tblHorario 
-            WHERE ambiente_id = '${ambiente_id}' 
+            WHERE docente_id = ${docente_id} 
             AND horario_dia = '${dia}' 
             AND (
                 (horario_hora_inicio < '${horaFin}' AND horario_hora_fin > '${horaInicio}')
-            ) AND periodo_id = ${periodo_id}`;
+            ) 
+            AND periodo_id = ${periodo_id}
+        `;
         const result = await controller.executeQueryJSON(query);
-        return result.length === 0;
+        return result.length > 0;
     }
 
     async function iniciarTransaccion() {
@@ -81,7 +97,6 @@ module.exports = function (injectedController) {
 
     return {
         getDocenteById,
-        getHorariosByDocente,
         getHorariosByDocenteYPeriodo,
         verificarDisponibilidadAmbiente,
         getAll,
@@ -92,5 +107,6 @@ module.exports = function (injectedController) {
         iniciarTransaccion,
         commitTransaccion,
         rollbackTransaccion,
+        verificarHorarioCruzado,
     };
 };

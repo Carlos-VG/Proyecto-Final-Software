@@ -50,8 +50,8 @@ const DocenteView = () => {
         <div className="col-12">
         </div>
       </div>
-      <div className="row h-100 no-gutters">
-        <div className="col-md-2 bg-light border-right p-3 sidebar">
+      <div className="row no-gutters">
+        <div className="col-md-2 p-4 barra">
           <div className="text-center mb-4">
             <div className="bg-primary text-white p-4 rounded-circle mb-3 mx-auto user-icon">
               <img src={UserIcon} alt="User Icon" className="icon" />
@@ -67,7 +67,7 @@ const DocenteView = () => {
             Cerrar Sesión
           </button>
         </div>
-        <div className="col-md-10 p-4 main-content">
+        <div className="col-md-10 p-4 main-content ">
           <h2>Gestionar Horarios</h2>
           {showHorarios && (
             <div>

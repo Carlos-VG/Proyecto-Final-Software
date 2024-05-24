@@ -1,4 +1,5 @@
 const config = require('../config');
+const logger = require('../logger');
 
 const dbConfig = config.mysql;
 
@@ -23,7 +24,6 @@ async function getOne(table, primaryKey, id) {
     const row = (await tableObj.select(columnNames).where(`${primaryKey} = :id`).bind('id', id).execute()).fetchOne();
     return row ? Object.fromEntries(columnNames.map((col, i) => [col, row[i]])) : null;
 }
-
 
 async function insert(table, data) {
     const db = await dbConnection.getConnection();
@@ -86,8 +86,9 @@ async function iniciarTransaccion() {
     try {
         const db = await dbConnection.getConnection();
         await db.startTransaction();
+        logger.info('Transacción iniciada');
     } catch (err) {
-        console.error('Error starting transaction:', err);
+        logger.error('Error al iniciar transacción:', err);
         throw err;
     }
 }
@@ -96,8 +97,9 @@ async function commitTransaccion() {
     try {
         const db = await dbConnection.getConnection();
         await db.commit();
+        logger.info('Transacción confirmada');
     } catch (err) {
-        console.error('Error committing transaction:', err);
+        logger.error('Error al confirmar transacción:', err);
         throw err;
     }
 }
@@ -106,8 +108,9 @@ async function rollbackTransaccion() {
     try {
         const db = await dbConnection.getConnection();
         await db.rollback();
+        logger.info('Transacción revertida');
     } catch (err) {
-        console.error('Error rolling back transaction:', err);
+        logger.error('Error al revertir transacción:', err);
         throw err;
     }
 }

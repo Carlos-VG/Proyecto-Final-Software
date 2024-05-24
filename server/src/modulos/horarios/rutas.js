@@ -11,9 +11,9 @@ const router = express.Router();
  * @brief Rutas de la entidad horario
  */
 router.get('/', seguridad('coordinador'), getTodosLosHorarios);
-router.get('/unHorario/:id?', seguridad(['coordinador', 'docente']), getUnHorario);
-router.post('/', seguridad('coordinador'), validarHorario);
-router.put('/actualizar/:id', seguridad('coordinador'), validarHorario);
+router.get('/:id', seguridad(['coordinador', 'docente']), getUnHorario);
+router.post('/', seguridad('coordinador'), validarHorario, agregarHorario);
+router.put('/actualizar/:id', seguridad('coordinador'), validarHorario, actualizarHorario);
 router.delete('/:id', seguridad('coordinador'), eliminarHorario);
 
 /**
