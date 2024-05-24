@@ -14,6 +14,7 @@ const programas = require('./modulos/programas/rutas');
 const competencias = require('./modulos/competencias/rutas');
 const periodosAcademicos = require('./modulos/periodosAcademicos/rutas');
 const ambientes = require('./modulos/ambientes/rutas');
+const horarios = require('./modulos/horarios/rutas');
 const error = require('./red/errors');
 
 const app = express();
@@ -37,6 +38,7 @@ app.use('/api/programas', programas);
 app.use('/api/competencias', competencias);
 app.use('/api/periodosAcademicos', periodosAcademicos);
 app.use('/api/ambientes', ambientes);
+app.use('/api/horarios', horarios);
 app.use(error);
 
 module.exports = app;

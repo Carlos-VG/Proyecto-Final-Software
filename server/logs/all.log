@@ -1526,3 +1526,58 @@
 2024-05-23 18:13:32:1332 [31merror[39m: [31mDocente no encontrado[39m
 2024-05-23 18:13:57:1357 [32minfo[39m: [32mUsuario autenticado correctamente[39m
 2024-05-23 18:14:29:1429 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-23 18:43:12:4312 [31merror[39m: [31mError al conectar a la base de datos: connection is not defined[39m
+2024-05-23 18:45:16:4516 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-23 18:45:17:4517 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-23 18:46:00:460 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-23 18:46:01:461 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-23 18:47:50:4750 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-23 18:47:50:4750 [32minfo[39m: [32mUsuario creado correctamente[39m
+2024-05-23 18:55:20:5520 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-23 18:55:20:5520 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-23 18:57:05:575 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-23 18:57:05:575 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-23 18:58:16:5816 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-23 18:58:16:5816 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-23 18:58:28:5828 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-23 18:58:28:5828 [31merror[39m: [31mError creando tablas: Incorrect table definition; there can be only one auto column and it must be defined as a key[39m
+2024-05-23 18:59:55:5955 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-23 18:59:56:5956 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-23 19:04:51:451 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-23 19:04:51:451 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-23 19:05:15:515 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-23 19:05:15:515 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-23 19:07:34:734 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-23 19:07:34:734 [32minfo[39m: [32mUsuario creado correctamente[39m
+2024-05-23 19:07:37:737 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-23 19:09:00:90 [35mhttp[39m: [35mSe agregó un ambiente[39m
+2024-05-23 19:12:03:123 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-23 19:12:03:123 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-23 19:14:32:1432 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-23 19:14:33:1433 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-23 19:14:48:1448 [35mhttp[39m: [35mSe obtuvieron todos los docentes[39m
+2024-05-23 19:20:37:2037 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-23 19:20:37:2037 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-23 19:31:18:3118 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-23 19:40:30:4030 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-23 19:40:31:4031 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-23 19:40:58:4058 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-23 19:40:58:4058 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-23 19:41:36:4136 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-23 19:41:36:4136 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-23 19:42:44:4244 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-23 19:42:44:4244 [32minfo[39m: [32mUsuario creado correctamente[39m
+2024-05-23 19:42:47:4247 [32minfo[39m: [32mUsuario autenticado correctamente[39m
+2024-05-23 19:43:49:4349 [35mhttp[39m: [35mSe agregó un ambiente[39m
+2024-05-23 19:56:42:5642 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-23 19:56:42:5642 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-23 19:56:53:5653 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-23 19:56:53:5653 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-23 19:59:35:5935 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-23 19:59:35:5935 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-23 19:59:46:5946 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-23 19:59:46:5946 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-23 20:00:04:04 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-23 20:00:04:04 [32minfo[39m: [32mTablas creadas correctamente[39m
+2024-05-23 20:01:04:14 [32minfo[39m: [32mConexión a la base de datos establecida[39m
+2024-05-23 20:01:04:14 [32minfo[39m: [32mTablas creadas correctamente[39m

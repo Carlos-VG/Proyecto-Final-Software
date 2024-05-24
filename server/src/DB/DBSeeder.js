@@ -1,6 +1,28 @@
-const { getConnection } = require('./db-connection');
+const mysqlx = require('@mysql/xdevapi');
 const logger = require('../logger');
 const config = require('../config');
+
+const dbConfig = {
+    host: config.mysql.host,
+    port: config.mysql.port,
+    user: config.mysql.user,
+    password: config.mysql.password,
+};
+
+let connection;
+
+async function getConnection() {
+    try {
+        if (!connection) {
+            connection = await mysqlx.getSession(dbConfig);
+            logger.info('Conexión a la base de datos establecida');
+        }
+        return connection;
+    } catch (err) {
+        logger.error('Error al conectar a la base de datos:', err);
+        throw err;
+    }
+}
 
 async function createTables() {
     const connection = await getConnection();
@@ -89,6 +111,7 @@ async function createTables() {
 
         await connection.sql(`
             CREATE TABLE IF NOT EXISTS tblHorario (
+                horario_id INT AUTO_INCREMENT PRIMARY KEY,
                 horario_dia VARCHAR(50) NOT NULL,
                 horario_hora_inicio TIME NOT NULL,
                 horario_hora_fin TIME NOT NULL,
@@ -96,9 +119,10 @@ async function createTables() {
                 docente_id INT NOT NULL,
                 ambiente_id VARCHAR(50) NOT NULL,
                 competencia_id INT NOT NULL,
-                PRIMARY KEY (horario_dia, horario_hora_inicio, docente_id, ambiente_id, competencia_id),
+                programa_id INT NOT NULL,
                 FOREIGN KEY (docente_id) REFERENCES tblDocente(docente_id),
-                FOREIGN KEY (ambiente_id) REFERENCES tblAmbiente(ambiente_id)
+                FOREIGN KEY (ambiente_id) REFERENCES tblAmbiente(ambiente_id),
+                CHECK (horario_dia IN ('LUN', 'MAR', 'MIE', 'JUE', 'VIE', 'SAB'))
             );
         `).execute();
 

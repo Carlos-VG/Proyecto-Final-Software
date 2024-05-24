@@ -149,11 +149,6 @@
       "id": 30,
       "programa_nombre": "Turismo y Hotelería",
       "programa_estado": 1
-    },
-    {
-      "programa_nombre": "Prueba hola",
-      "programa_estado": 1,
-      "id": 31
     }
   ],
   "competencias": [
@@ -908,16 +903,6 @@
       "id": 90,
       "programa_id": 30,
       "competencia_id": 50
-    },
-    {
-      "programa_id": 31,
-      "competencia_id": 23,
-      "id": 91
-    },
-    {
-      "programa_id": 31,
-      "competencia_id": 49,
-      "id": 92
     }
   ]
 }
