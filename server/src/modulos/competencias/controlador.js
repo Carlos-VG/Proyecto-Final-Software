@@ -29,6 +29,10 @@ exports.insert = async (req, res) => {
     try {
         const dataToInsert = req.body;
         dataToInsert.competencia_estado = 1;
+        const exists = await existsCompetenciaName(dataToInsert.competencia_nombre);
+        if (exists) {
+            return res.status(400).json({ message: 'Ya existe una competencia con ese nombre' });
+        }
         const response = await axios.post(`${jsonServerUrl}/competencias`, dataToInsert);
         res.json(response.data);
         logger.info('Competencia insertada');
@@ -42,6 +46,10 @@ exports.update = async (req, res) => {
     const { id } = req.params;
     try {
         req.body.competencia_estado = 1;
+        const exists = await existsCompetenciaName(req.body.competencia_nombre, id);
+        if (exists) {
+            return res.status(400).json({ message: 'Ya existe una competencia con ese nombre' });
+        }
         const response = await axios.put(`${jsonServerUrl}/competencias/${id}`, req.body);
         res.json(response.data);
         logger.info(`Competencia con id ${id} actualizada`);
@@ -65,3 +73,27 @@ exports.changeState = async (req, res) => {
         res.status(500).json({ message: 'Error al actualizar estado de competencias' });
     }
 };
+
+function normalizeName(name) {
+    const normalized = name.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    return normalized.trim().toLowerCase().replace(/[\s,]+/g, ' ');
+}
+
+
+async function existsCompetenciaName(name, excludeId = null) {
+    const normalizedName = normalizeName(name);
+    try {
+        const response = await axios.get(`${jsonServerUrl}/competencias`);
+        const competencias = response.data;
+        const competencia = excludeId ? competencias.find(c => normalizeName(c.competencia_nombre) === normalizedName && c.id != excludeId) : competencias.find(c => normalizeName(c.competencia_nombre) === normalizedName);
+        return competencia !== undefined;
+    } catch (error) {
+        logger.error('Error al verificar el nombre de la competencia', error);
+        throw new Error('Error al verificar el nombre de la competencia');
+    }
+}
+
+
+
+
+

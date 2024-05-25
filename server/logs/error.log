@@ -185,3 +185,13 @@
 2024-05-24 02:17:04:174 [31merror[39m: [31mError al autenticar usuario[39m
 2024-05-24 04:18:03:183 [31merror[39m: [31mError, estado de periodo academico actualizado insatisfactoriamente[39m
 2024-05-24 04:20:31:2031 [31merror[39m: [31mError, estado de periodo academico actualizado insatisfactoriamente[39m
+2024-05-25 13:44:41:4441 [31merror[39m: [31mError al autenticar usuario[39m
+2024-05-25 13:45:37:4537 [31merror[39m: [31mError al autenticar usuario[39m
+2024-05-25 13:46:08:468 [31merror[39m: [31mError al autenticar usuario[39m
+2024-05-25 13:48:01:481 [31merror[39m: [31mError al autenticar usuario[39m
+2024-05-25 17:26:15:2615 [31merror[39m: [31mError al verificar el nombre de la competencia Cannot read properties of undefined (reading 'toLowerCase')[39m
+2024-05-25 17:26:15:2615 [31merror[39m: [31mError al insertar competencia[39m
+2024-05-25 17:28:32:2832 [31merror[39m: [31mError al insertar competencia[39m
+2024-05-25 17:29:41:2941 [31merror[39m: [31mError al actualizar la competencia con id 50[39m
+2024-05-25 17:30:05:305 [31merror[39m: [31mError al actualizar la competencia con id 50[39m
+2024-05-25 17:33:28:3328 [31merror[39m: [31mError al insertar competencia[39m

@@ -8,14 +8,6 @@ module.exports = function (injectedController) {
         controller = require('../../DB/mysql');
     }
 
-    async function getAll() {
-        return controller.getAll(TABLE_NAME);
-    }
-
-    async function getOne(id) {
-        return controller.getOne(TABLE_NAME, 'horario_id', id);
-    }
-
     async function insert(data) {
         const dataToInsert = { ...data };
         dataToInsert.horario_duracion = calcularDuracion(data.horario_hora_inicio, data.horario_hora_fin);
@@ -44,6 +36,18 @@ module.exports = function (injectedController) {
 
     async function getHorariosByDocenteYPeriodo(docente_id, periodo_id) {
         const query = `SELECT * FROM tblHorario WHERE docente_id = ${docente_id} AND periodo_id = ${periodo_id}`;
+        const result = await controller.executeQueryJSON(query);
+        return result || [];
+    }
+
+    async function getHorariosByPeriodoYAmbiente(periodo_id, ambiente_id) {
+        const query = `SELECT * FROM tblHorario WHERE periodo_id = ${periodo_id} AND ambiente_id = '${ambiente_id}'`;
+        const result = await controller.executeQueryJSON(query);
+        return result || [];
+    }
+
+    async function getFranjaHorariaDocente(docente_id) {
+        const query = `SELECT * FROM tblHorario WHERE docente_id = ${docente_id}`;
         const result = await controller.executeQueryJSON(query);
         return result || [];
     }
@@ -98,9 +102,9 @@ module.exports = function (injectedController) {
     return {
         getDocenteById,
         getHorariosByDocenteYPeriodo,
+        getHorariosByPeriodoYAmbiente,
+        getFranjaHorariaDocente,
         verificarDisponibilidadAmbiente,
-        getAll,
-        getOne,
         insert,
         update,
         calcularDuracion,

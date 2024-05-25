@@ -10,52 +10,12 @@ const router = express.Router();
 /**
  * @brief Rutas de la entidad horario
  */
-router.get('/', seguridad('coordinador'), getTodosLosHorarios);
-router.get('/:id', seguridad(['coordinador', 'docente']), getUnHorario);
 router.post('/', seguridad('coordinador'), validarHorario, agregarHorario);
 router.put('/actualizar/:id', seguridad('coordinador'), validarHorario, actualizarHorario);
 router.delete('/:id', seguridad('coordinador'), eliminarHorario);
-
-/**
- * @brief Obtiene todos los horarios
- * @return Lista de horarios
- */
-async function getTodosLosHorarios(req, res, next) {
-    try {
-        const items = await controlador.getAll();
-        respuesta.success(req, res, items, 200);
-        logger.http('Se obtuvieron todos los docentes')
-    } catch (err) {
-        next(err);
-    }
-}
-
-/**
- * @brief Obtiene un horario
- * @return Horario
- * @param req peticion
- * @param res respuesta
- * @param next siguiente
- */
-async function getUnHorario(req, res, next) {
-    try {
-        // Obtener el ID del docente directamente del token
-        let idDocente;
-        if (req.user.role === 'coordinador' && req.params.id) {
-            idDocente = req.params.id;
-        } else {
-            idDocente = req.user.docente_id;
-        }
-        const item = await controlador.getOne(idDocente);
-        if (!item) {
-            logger.error('Horario no encontrado');
-            return res.status(404).send({ error: 'Horario no encontrado' });
-        }
-        respuesta.success(req, res, item, 200);
-    } catch (err) {
-        next(err);
-    }
-}
+router.get('/horarioPeriodoAmbiente/:idPeriodo/:idAmbiente', seguridad('coordinador'), getHorarioPeriodoAmbiente);
+router.get('/horarioPeriodoDocente/:idPeriodo/:idDocente', seguridad('coordinador'), getHorarioPeriodoDocente);
+router.get('/franjaHorariaDocente/:idDocente?', seguridad(['coordinador', 'docente']), getFranjaHorariaDocente);
 
 /**
  * @brief Agregar un horario
@@ -100,6 +60,60 @@ async function eliminarHorario(req, res, next) {
     try {
         const item = await controlador.changeState(req.params.id);
         respuesta.success(req, res, 'Estado actualizado', 200);
+    } catch (err) {
+        next(err);
+    }
+}
+
+/**
+ * @brief Obtener horarios por periodo y ambiente
+ * @return horarios
+ * @param req peticion
+ * @param res respuesta
+ * @param next siguiente
+ */
+async function getHorarioPeriodoAmbiente(req, res, next) {
+    try {
+        const items = await controlador.getHorariosByPeriodoYAmbiente(req.params.idPeriodo, req.params.idAmbiente);
+        respuesta.success(req, res, items, 200);
+    } catch (err) {
+        next(err);
+    }
+}
+
+/**
+ * @brief Obtener horarios por periodo y docente
+ * @return horarios
+ * @param req peticion
+ * @param res respuesta
+ * @param next siguiente
+ */
+async function getHorarioPeriodoDocente(req, res, next) {
+    try {
+        const items = await controlador.getHorariosByDocenteYPeriodo(req.params.idDocente, req.params.idPeriodo);
+        respuesta.success(req, res, items, 200);
+    } catch (err) {
+        next(err);
+    }
+}
+
+/**
+ * @brief Obtener franja horaria de un docente
+ * @return horarios
+ * @param req peticion
+ * @param res respuesta
+ * @param next siguiente
+ */
+async function getFranjaHorariaDocente(req, res, next) {
+    try {
+        let idDocenteReq;
+        if (req.user.role === 'coordinador' && req.params.idDocente) {
+            idDocenteReq = req.params.idDocente;
+        } else {
+            idDocenteReq = req.user.docente_id;
+        }
+        const items = await controlador.getFranjaHorariaDocente(idDocenteReq);
+        respuesta.success(req, res, items, 200);
     } catch (err) {
         next(err);
     }

@@ -25,6 +25,7 @@ async function getTodosLosDocentes(req, res, next) {
         respuesta.success(req, res, items, 200);
         logger.http('Se obtuvieron todos los docentes')
     } catch (err) {
+        respuesta.error(req, res, 'Error al obtener los docentes', 500);
         next(err);
     }
 }
@@ -52,6 +53,7 @@ async function getUnDocente(req, res, next) {
         }
         respuesta.success(req, res, item, 200);
     } catch (err) {
+        respuesta.error(req, res, 'Error al obtener el docente', 500);
         next(err);
     }
 }
@@ -67,8 +69,16 @@ async function agregarDocente(req, res, next) {
     try {
         const item = await controlador.insert(req.body);
         respuesta.success(req, res, 'Docente agregado satisfactoriamente', 201);
-        logger
     } catch (err) {
+        if (err.message.includes('Error al insertar el usuario. Posiblemente el nombre de usuario ya exista.')) {
+            respuesta.error(req, res, err.message, 400);
+        } else if (err.message.includes('Duplicate entry')) {
+            respuesta.error(req, res, 'El docente ya existe.', 400);
+        } else if (err.message.includes('Data too long for column')) {
+            respuesta.error(req, res, 'La identifacion es muy larga.', 400);
+        } else {
+            respuesta.error(req, res, 'Error al agregar el docente', 500);
+        }
         next(err);
     }
 }
@@ -78,6 +88,13 @@ async function actualizarDocente(req, res, next) {
         const item = await controlador.update(req.body, req.params.id);
         respuesta.success(req, res, 'Docente actualizado satisfactoriamente', 200);
     } catch (err) {
+        if (err.message.includes('Duplicate entry')) {
+            respuesta.error(req, res, 'El docente ya existe.', 400);
+        } else if (err.message.includes('Data too long for column')) {
+            respuesta.error(req, res, 'La identifacion es muy larga.', 400);
+        } else {
+            respuesta.error(req, res, 'Error al actualizar el docente', 500);
+        }
         next(err);
     }
 }
@@ -94,6 +111,7 @@ async function cambiarEstadoDocente(req, res, next) {
         const item = await controlador.changeState(req.params.id);
         respuesta.success(req, res, 'Estado actualizado', 200);
     } catch (err) {
+        respuesta.error(req, res, 'Error al actualizar el estado del docente', 500);
         next(err);
     }
 }

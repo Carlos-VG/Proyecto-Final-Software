@@ -21,8 +21,6 @@ module.exports = function (injectedController) {
         return controller.insert(TABLE_NAME, data);
     }
 
-
-
     async function update(data, id) {
         const dataToUpdate = { ...data };
         return controller.update(TABLE_NAME, 'ambiente_id', dataToUpdate, id);

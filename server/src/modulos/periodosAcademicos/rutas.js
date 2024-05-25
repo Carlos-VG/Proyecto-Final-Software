@@ -3,6 +3,7 @@ const respuesta = require('../../red/respuestas');
 const controlador = require('./index');
 const logger = require('../../logger');
 const seguridad = require('../../middleware/seguridad');
+const validarPeriodoAcademico = require('../../middleware/validarPeriodoAcademico');
 const router = express.Router();
 
 
@@ -11,8 +12,8 @@ const router = express.Router();
  */
 router.get('/', seguridad('coordinador'), getTodosLosPeriodosAcademicos);
 router.get('/:id', seguridad('coordinador'), getUnPeriodoAcademico);
-router.post('/', seguridad('coordinador'), agregarPeriodoAcademico);
-router.put('/:id', seguridad('coordinador'), actualizarUnPeriodoAcademico);
+router.post('/', seguridad('coordinador'), validarPeriodoAcademico, agregarPeriodoAcademico);
+router.put('/:id', seguridad('coordinador'), validarPeriodoAcademico, actualizarUnPeriodoAcademico);
 router.put('/cambiarEstado/:id', seguridad('coordinador'), actualizarEstado);
 
 /**

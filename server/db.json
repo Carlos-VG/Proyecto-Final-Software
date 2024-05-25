@@ -452,10 +452,10 @@
       "competencia_estado": 1
     },
     {
-      "id": 50,
       "competencia_nombre": "Sostenibilidad",
-      "competencia_tipo": "Genérica",
-      "competencia_estado": 1
+      "competencia_tipo": "Especifica",
+      "competencia_estado": 1,
+      "id": 50
     }
   ],
   "programasCompetencias": [
