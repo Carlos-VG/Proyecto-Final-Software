@@ -34,7 +34,7 @@ module.exports = function (injectedController) {
         return await controller.getOne('tblDocente', 'docente_id', id);
     }
 
-    async function getHorariosByDocenteYPeriodo(docente_id, periodo_id) {
+    async function getHorariosByPeriodoYDocente(docente_id, periodo_id) {
         const query = `SELECT * FROM tblHorario WHERE docente_id = ${docente_id} AND periodo_id = ${periodo_id}`;
         const result = await controller.executeQueryJSON(query);
         return result || [];
@@ -101,7 +101,7 @@ module.exports = function (injectedController) {
 
     return {
         getDocenteById,
-        getHorariosByDocenteYPeriodo,
+        getHorariosByPeriodoYDocente,
         getHorariosByPeriodoYAmbiente,
         getFranjaHorariaDocente,
         verificarDisponibilidadAmbiente,

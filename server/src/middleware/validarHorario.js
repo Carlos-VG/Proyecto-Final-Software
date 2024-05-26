@@ -14,7 +14,7 @@ async function validarHorario(req, res, next) {
             return res.status(400).send({ error: 'Docente no encontrado' });
         }
         // Validar horas semanales y diarias considerando solo el periodo actual
-        let horarios = await controlador.getHorariosByDocenteYPeriodo(docente_id, periodo_id);
+        let horarios = await controlador.getHorariosByPeriodoYDocente(docente_id, periodo_id);
         if (!horarios) {
             horarios = [];
         }

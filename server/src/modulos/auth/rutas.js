@@ -20,6 +20,11 @@ async function login(req, res, next) {
         respuesta.success(req, res, token, 200);
         logger.info("Usuario autenticado correctamente")
     } catch (error) {
+        if (error.message.includes('Credenciales incorrectas')) {
+            respuesta.error(req, res, 'Credenciales incorrectas', 401);
+        } else {
+            respuesta.error(req, res, 'Error al autenticar usuario', 500);
+        }
         next(error);
         logger.error('Error al autenticar usuario');
     }

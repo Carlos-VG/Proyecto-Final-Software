@@ -195,3 +195,9 @@
 2024-05-25 17:29:41:2941 [31merror[39m: [31mError al actualizar la competencia con id 50[39m
 2024-05-25 17:30:05:305 [31merror[39m: [31mError al actualizar la competencia con id 50[39m
 2024-05-25 17:33:28:3328 [31merror[39m: [31mError al insertar competencia[39m
+2024-05-25 20:13:54:1354 [31merror[39m: [31mError en post request, reintentando... read ECONNRESET[39m
+2024-05-25 20:13:54:1354 [31merror[39m: [31mError en post request, reintentando... read ECONNRESET[39m
+2024-05-25 20:14:53:1453 [31merror[39m: [31mError en post request, reintentando... socket hang up[39m
+2024-05-25 20:26:01:261 [31merror[39m: [31mError al autenticar usuario[39m
+2024-05-25 20:27:31:2731 [31merror[39m: [31mError al autenticar usuario[39m
+2024-05-25 23:20:01:201 [31merror[39m: [31mError al autenticar usuario[39m

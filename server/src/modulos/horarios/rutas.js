@@ -14,7 +14,7 @@ router.post('/', seguridad('coordinador'), validarHorario, agregarHorario);
 router.put('/actualizar/:id', seguridad('coordinador'), validarHorario, actualizarHorario);
 router.delete('/:id', seguridad('coordinador'), eliminarHorario);
 router.get('/horarioPeriodoAmbiente/:idPeriodo/:idAmbiente', seguridad('coordinador'), getHorarioPeriodoAmbiente);
-router.get('/horarioPeriodoDocente/:idPeriodo/:idDocente', seguridad('coordinador'), getHorarioPeriodoDocente);
+router.get('/horarioPeriodoDocente/:idPeriodo/:idDocente?', seguridad(['coordinador', 'docente']), getHorarioPeriodoDocente);
 router.get('/franjaHorariaDocente/:idDocente?', seguridad(['coordinador', 'docente']), getFranjaHorariaDocente);
 
 /**
@@ -29,6 +29,9 @@ async function agregarHorario(req, res, next) {
         respuesta.success(req, res, 'Horario agregado satisfactoriamente', 201);
         logger
     } catch (err) {
+        if (err.message.includes('Cannot add or update a child row: a foreign key constraint fails')) {
+            respuesta.error(req, res, 'Periodo Academico, Ambiente o Docente no encontrado', 400);
+        }
         next(err);
     }
 }
@@ -90,7 +93,13 @@ async function getHorarioPeriodoAmbiente(req, res, next) {
  */
 async function getHorarioPeriodoDocente(req, res, next) {
     try {
-        const items = await controlador.getHorariosByDocenteYPeriodo(req.params.idDocente, req.params.idPeriodo);
+        let idDocenteReq;
+        if (req.user.role === 'coordinador' && req.params.idDocente) {
+            idDocenteReq = req.params.idDocente;
+        } else {
+            idDocenteReq = req.user.docente_id;
+        }
+        const items = await controlador.getHorariosByPeriodoYDocente(idDocenteReq, req.params.idPeriodo);
         respuesta.success(req, res, items, 200);
     } catch (err) {
         next(err);

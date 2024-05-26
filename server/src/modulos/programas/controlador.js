@@ -75,6 +75,10 @@ exports.insert = async (req, res) => {
     try {
         const { programa, competencias } = req.body;
         programa.programa_estado = 1;
+        const exists = await existsProgramaName(programa.programa_nombre);
+        if (exists) {
+            return res.status(400).json({ message: 'Ya existe un programa con ese nombre' });
+        }
         const programaResponse = await axios.post(`${jsonServerUrl}/programas`, programa);
 
         const competenciasPromises = competencias.map(competenciaId =>
@@ -118,6 +122,10 @@ exports.update = async (req, res) => {
     try {
         const { programa, competencias } = req.body;
         programa.programa_estado = 1;
+        const exists = await existsProgramaName(programa.programa_nombre, req.params.id);
+        if (exists) {
+            return res.status(400).json({ message: 'Ya existe un programa con ese nombre' });
+        }
         const programaResponse = await safeAxiosRequest(`${jsonServerUrl}/programas/${req.params.id}`, 'put', programa);
 
         // Obtención de relaciones existentes para eliminarlas
@@ -165,3 +173,22 @@ exports.changeState = async (req, res) => {
         res.status(500).json({ message: 'Error al actualizar estado de programa' });
     }
 };
+
+function normalizeName(name) {
+    const normalized = name.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    return normalized.trim().toLowerCase().replace(/[\s,]+/g, ' ');
+}
+
+
+async function existsProgramaName(name, excludeId = null) {
+    const normalizedName = normalizeName(name);
+    try {
+        const response = await axios.get(`${jsonServerUrl}/programas`);
+        const programas = response.data;
+        const programa = excludeId ? programas.find(c => normalizeName(c.programa_nombre) === normalizedName && c.id != excludeId) : programas.find(c => normalizeName(c.programa_nombre) === normalizedName);
+        return programa !== undefined;
+    } catch (error) {
+        logger.error('Error al verificar el nombre del programa', error);
+        throw new Error('Error al verificar el nombre del programa');
+    }
+}
